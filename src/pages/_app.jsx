@@ -1,11 +1,11 @@
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
 import dynamic from "next/dynamic";
+// import type { AppProps } from "next/app";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       <div className="hidden lg:block">
