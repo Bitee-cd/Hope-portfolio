@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import dynamic from "next/dynamic";
 // import type { AppProps } from "next/app";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
