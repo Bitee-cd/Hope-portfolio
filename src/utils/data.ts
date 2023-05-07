@@ -17,7 +17,7 @@ export const projects: Project[] = [
     link: "/projects/classic_park",
   },
   {
-    image: "/images/projects/flet_ride.png",
+    image: "/Images/projects/flet_ride.png",
     title: "Flet Ride: Car Booking (Logistic)",
     link: "/projects/flet_ride",
   },
