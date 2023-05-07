@@ -8,14 +8,16 @@ import Tools from "@/Components/Reusable/Tools";
 
 export default function Home() {
   return (
-    <Layout>
-      <div className="bg-sec">
-        <Hero />
-        <Introduction />
-        <Project />
-        <PeopleSay />
-        <Design />
-      </div>
-    </Layout>
+    <div className="bg-sec">
+      <Layout>
+        <>
+          <Hero />
+          <Introduction />
+          <Project />
+          <PeopleSay />
+          <Design />
+        </>
+      </Layout>
+    </div>
   );
 }
