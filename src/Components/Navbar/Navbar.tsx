@@ -7,8 +7,8 @@ import Image from "next/image";
 interface Props {}
 
 const Navbar = (props: Props) => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const navbarRef = useRef(null);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const navbarRef = useRef<HTMLElement>(null);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -18,6 +18,7 @@ const Navbar = (props: Props) => {
       document.body.style.paddingTop = `${navbarHeight}px`;
     }
   }, [navbarRef?.current?.offsetHeight]);
+
   return (
     <section ref={navbarRef} className="bg-sec fixed top-0 w-full z-50">
       <div className="screen-center text-xl font-semibold lg:flex justify-between items-center py-2 lg:py-0">
