@@ -7,7 +7,7 @@ export const projects: Project[] = [
     link: "/projects/snappy-loan",
   },
   {
-    image: "/Images/projects/libraria.png",
+    image: "/Images/projects/Libraria.png",
     title: "Libraria: Online Bookstore (E-commerce)",
     link: "/projects/libraria",
   },
