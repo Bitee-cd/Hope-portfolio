@@ -55,7 +55,7 @@ const Project = (props: Props) => {
                     alt={project.title}
                     src={project.image}
                     placeholder="blur"
-                    blurDataURL="/images/profile__.png"
+                    blurDataURL="/Images/profile__.png"
                     width={700}
                     height={475}
                     priority

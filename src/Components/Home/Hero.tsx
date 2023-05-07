@@ -4,7 +4,7 @@ const Hero = (props: Props) => {
   return (
     <section className="bg-sec">
       <div className="screen-center">
-        <div className="py-10 lg:pt-20 text-ter flex flex-col justify-center items-center mx-auto md:w-[80%]">
+        <div className="py-10 text-ter flex flex-col justify-center items-center mx-auto md:w-[80%]">
           <p className="text-center font-extrabold text-[50px]">
             <span className="text-pri   text-[45px]  md:text-[90px] lg:text-[120px] ">
               Simplicity

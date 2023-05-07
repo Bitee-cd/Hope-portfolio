@@ -8,9 +8,9 @@ const AboutHope = (props: Props) => {
       <div className="screen-center rounded-[10px] lg:rounded-[60px] border border-sec grid lg:grid-cols-2">
         <div className="relative border-b border-sec lg:border-0 lg:border-r ">
           <Image
-            src="/images/hope.png"
+            src="/Images/hope.png"
             placeholder="blur"
-            blurDataURL="/images/profile__.png"
+            blurDataURL="/Images/profile__.png"
             width={700}
             height={475}
             priority
