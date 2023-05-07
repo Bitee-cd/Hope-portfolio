@@ -4,9 +4,11 @@ import Link from "next/link";
 import Button from "../Reusable/Button";
 import Image from "next/image";
 
-interface Props {}
+interface Props {
+  handleNavHeight: (height: number) => void;
+}
 
-const Navbar = (props: Props) => {
+const Navbar = ({ handleNavHeight }: Props) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const navbarRef = useRef<HTMLElement>(null);
   const toggleMenu = () => {
@@ -15,7 +17,7 @@ const Navbar = (props: Props) => {
   useEffect(() => {
     if (navbarRef.current) {
       const navbarHeight = navbarRef.current?.offsetHeight;
-      document.body.style.paddingTop = `${navbarHeight}px`;
+      handleNavHeight(navbarHeight);
     }
   }, [navbarRef?.current?.offsetHeight]);
 
