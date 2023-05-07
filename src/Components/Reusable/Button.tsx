@@ -4,7 +4,9 @@ interface Props {
 }
 const Button = ({ text }: Props) => {
   return (
-    <button className="bg-pri px-4 py-2 rounded-3xl text-sec">{text}</button>
+    <button className="bg-pri  border border-pri duration-300 hover:bg-ter px-4 py-2 lg:px-5 lg:py-3 font-semibold rounded-3xl text-base lg:text-xl text-sec">
+      {text}
+    </button>
   );
 };
 

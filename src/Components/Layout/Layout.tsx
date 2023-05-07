@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+
 interface Props {
   children: ReactElement;
 }
