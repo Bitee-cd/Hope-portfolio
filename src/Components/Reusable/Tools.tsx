@@ -16,6 +16,16 @@ const Tools = (props: Props) => {
     { id: "oho3" },
     { id: "oho4" },
     { id: "oho5" },
+    { id: "figma" },
+    { id: "photoshop" },
+    { id: "ai" },
+    { id: "firebase" },
+    { id: "oho1" },
+    { id: "openai" },
+    { id: "oho2" },
+    { id: "oho3" },
+    { id: "oho4" },
+    { id: "oho5" },
   ];
   return (
     <section className="pt-10">
