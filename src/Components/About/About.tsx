@@ -8,7 +8,7 @@ const AboutHope = (props: Props) => {
       <div className="screen-center rounded-[10px] lg:rounded-[60px] border border-sec grid lg:grid-cols-2">
         <div className="relative border-b border-sec lg:border-0 lg:border-r ">
           <Image
-            src="/Images/hope.png"
+            src="/Images/hope_white.png"
             placeholder="blur"
             blurDataURL="/Images/profile__.png"
             width={700}
@@ -17,10 +17,10 @@ const AboutHope = (props: Props) => {
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto",
+              height: "100%",
             }}
             alt="Hope Jonah"
-            className=""
+            className="object-cover lg:rounded-tl-[60px] lg:rounded-bl-[60px] rounded-tl-[10px] rounded-tr-[10px] lg:rounded-tr-0 "
           />
         </div>
         <div className="p-5 md:p-10 lg:py-20">

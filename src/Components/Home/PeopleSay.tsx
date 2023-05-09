@@ -92,10 +92,10 @@ const PeopleSay = (props: Props) => {
                 <p className="text-[#DADADA] p">
                   {testimonialData[currentIndex].quote}
                 </p>
-                <p className="text-white p font-semibold">
+                <p className="text-white p font-semibold mt-5">
                   {testimonialData[currentIndex].author}
                 </p>
-                <div className="p-small text-[#888787] text-opacity-60 mt-5">
+                <div className="p-small text-[#888787] text-opacity-60 mt-2">
                   <p> {testimonialData[currentIndex].position}</p>
                   <p>
                     <span>{testimonialData[currentIndex].company}</span>

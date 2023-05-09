@@ -17,7 +17,7 @@ const socialIcons = [
 ];
 const Footer = (props: Props) => {
   const router = useRouter();
-  console.log(router);
+  
   return (
     <>
       <section

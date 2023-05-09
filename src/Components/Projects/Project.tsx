@@ -48,7 +48,7 @@ const Project = (props: Props) => {
               variants={item}
               className="border-[0.4px] md:border hover:border-pri duration-300 border-ter rounded-[15px] md:rounded-[60px] "
             >
-              <div className="w-[90%] mx-auto py-5 md:py-10 ">
+              <div className="w-[90%] mx-auto my-5 md:my-10 border-inherit">
                 <p className="h4">{project.title}</p>
                 <div className="my-5 mb-10">
                   <Image
@@ -62,14 +62,17 @@ const Project = (props: Props) => {
                     sizes="100vw"
                     style={{
                       width: "100%",
-                      height: "auto",
                     }}
-                    className=""
+                    className="object-cover max-h-[55vh]"
                   />
                 </div>
-                <div className="mt-10">
+                <div className="mt-5">
                   <Link href={project.link}>
-                    <Button text="View Case Study" />
+                    <Button
+                      text={`${
+                        index === 4 ? "View Designs" : "View Case Study"
+                      }`}
+                    />
                   </Link>
                 </div>
               </div>

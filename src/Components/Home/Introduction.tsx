@@ -6,11 +6,11 @@ const Introduction = (props: Props) => {
   return (
     <section className="relative">
       {/* <div className="w-1/2 right-0 top-0 background absolute h-full"></div> */}
-      <div className="screen-center items-center grid lg:grid-cols-2 text-ter">
+      <div className="screen-center items-center grid lg:grid-cols-2 text-ter my-10">
         <div className="mx-auto lg:col-start-2 lg:row-start-1 w-full">
           <Image
             alt="Hope Jonah"
-            src="/Images/profile__.png"
+            src="/Images/hope_black.png"
             placeholder="blur"
             blurDataURL="/images/profile__.png"
             width={700}
@@ -18,10 +18,10 @@ const Introduction = (props: Props) => {
             priority
             sizes="100vw"
             style={{
-              width: "100%",
+              width: "50%",
               height: "auto",
             }}
-            className=""
+            className="rounded-full mx-auto"
           />
         </div>
         <div className="lg:col-start-1 lg:row-start-1">
@@ -44,7 +44,7 @@ const Introduction = (props: Props) => {
             I am a Product Designer with 3 years experience. I work at the
             intersection of inquisitive, reasoning, and imagination to uncover
             perception, analyze problems, and create meaningful, future-oriented
-            solutions. I have in design for B2B and B2C experiences on iOS,
+            solutions. I have worked for B2B and B2C experiences on iOS,
             Android, and the web. I am a great advocate of user centered design.
             I am currently learning Mobile Development.
           </p>

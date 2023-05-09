@@ -1,12 +1,15 @@
+import { Qualities } from "@/Interfaces/Qualities";
 import React from "react";
 interface Props {}
-const different = [
+
+
+const different :Qualities[]= [
   { text: "I am obsessed with design.", number: "01" },
   { text: "I believe in personal development.", number: "02" },
   { text: "Complexities excite me.", number: "03" },
   { text: "I am a team player.", number: "04" },
 ];
-const principles = [
+const principles :Qualities[]= [
   { text: "Integrity", number: "01" },
   { text: "Commitment", number: "02" },
   { text: "Passion", number: "03" },
