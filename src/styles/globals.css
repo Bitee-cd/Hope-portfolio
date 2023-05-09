@@ -144,3 +144,6 @@ body {
   flex-direction: column;
   transition: transform 0.5s;
 }
+.icon_circle {
+  @apply w-[40px] h-[40px] flex items-center justify-center rounded-full border;
+}

@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         pri: "#C5FF00",
+        pri_200: "#21B44A",
         sec: "#1D191A",
         sec_dark: "#111010",
         sec_light: "#464646",

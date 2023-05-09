@@ -33,7 +33,7 @@ const Project = (props: Props) => {
   }, [controls, inView]);
   return (
     <section className="bg-sec ">
-      <div className="screen-center text-ter flex flex-col gap-10 h-full py-10">
+      <div className="w-[90%] mx-auto text-ter flex flex-col gap-10 h-full py-10">
         <h2 className="text-center h2 font-bold">Featured Projects</h2>
         <motion.div
           // variants={container}
@@ -50,7 +50,7 @@ const Project = (props: Props) => {
             >
               <div className="w-[90%] mx-auto my-5 md:my-10 border-inherit">
                 <p className="h4">{project.title}</p>
-                <div className="my-5 mb-10">
+                <div className="my-5">
                   <Image
                     alt={project.title}
                     src={project.image}
