@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* global styles  */
 h1,
 h2,
 h3,
@@ -39,6 +40,7 @@ body {
 .p-small {
   @apply text-sm md:text-base lg:text-xl 2xl:text-xl;
 }
+/* global styles  */
 
 .background {
   background-image: url("/Images/background.png");
