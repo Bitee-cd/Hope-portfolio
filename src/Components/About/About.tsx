@@ -7,20 +7,13 @@ const AboutHope = (props: Props) => {
     <section className="my-10">
       <div className="screen-center rounded-[10px] lg:rounded-[60px] border border-sec grid lg:grid-cols-2">
         <div className="relative border-b border-sec lg:border-0 lg:border-r ">
-          <Image
-            src="/Images/hope_white.png"
-            placeholder="blur"
-            blurDataURL="/Images/profile__.png"
-            width={700}
-            height={475}
-            priority
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "100%",
-            }}
+          <img
+            src="/Images/hope_white.svg"
+            // placeholder="blur"
+            // blurDataURL="/Images/profile__.png"
+
             alt="Hope Jonah"
-            className="object-cover lg:rounded-tl-[60px] lg:rounded-bl-[60px] rounded-tl-[10px] rounded-tr-[10px] lg:rounded-tr-0 "
+            className="object-cover w-full h-full lg:rounded-tl-[60px] lg:rounded-bl-[60px] rounded-tl-[10px] rounded-tr-[10px] lg:rounded-tr-0 "
           />
         </div>
         <div className="p-5 md:p-10 lg:py-20">
