@@ -46,24 +46,18 @@ const Project = (props: Props) => {
               ref={ref}
               key={index}
               variants={item}
-              className="border-[0.4px] md:border hover:border-pri duration-300 border-ter rounded-[15px] md:rounded-[60px] "
+              className="border-[0.5px]  hover:border-pri duration-300 border-ter rounded-[15px] md:rounded-[60px] "
             >
               <div className="w-[90%] mx-auto my-5 md:my-10 border-inherit">
                 <p className="h4">{project.title}</p>
                 <div className="my-5">
-                  <Image
+                  <img
                     alt={project.title}
                     src={project.image}
-                    placeholder="blur"
-                    blurDataURL="/Images/profile__.png"
-                    width={700}
-                    height={475}
-                    priority
-                    sizes="100vw"
                     style={{
                       width: "100%",
                     }}
-                    className="object-cover max-h-[55vh]"
+                    className="object-cover h-auto w-full"
                   />
                 </div>
                 <div className="mt-5">

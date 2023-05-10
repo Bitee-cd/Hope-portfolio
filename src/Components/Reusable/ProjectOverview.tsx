@@ -2,42 +2,18 @@ import React from "react";
 import Lens from "../svg/Overview/1a";
 import Book from "../svg/Overview/1b";
 import CheckBook from "../svg/Overview/2a";
-import { OverViewData } from "@/Interfaces/Projects";
+import { OverViewData, OverViewStyle } from "@/Interfaces/Projects";
+import Image from "next/image";
+import Bulb from "../svg/Overview/1c";
+import Clock from "../svg/Overview/2b";
+import Spanner from "../svg/Overview/2c";
 interface Props {
-  color: string;
+  data: OverViewData[];
+  style: OverViewStyle;
 }
-const data: OverViewData[] = [
-  {
-    title: "Overview",
-    color: "#21B44A",
-    className: "green",
-    text: "In order to assist users in achieving their personal and professional goals, Snappy is a digital lending application that employs artificial intelligence to forecast user behaviour on loan offers.",
-  },
-  { title: "My Role", text: "Solo UI/UX Designer" },
-  {
-    title: "The problem",
-    text: "The loan enrollment procedure is becoming more laborious and time-consuming for users. Users are initially asked to fill out sensitive information, which many find uncomfortable.",
-  },
-  { title: "Duration", text: "Nov 2022 - Feb 2023" },
-  {
-    title: "Goal and Objectives",
-    text: "The project's objectives include making the app user-friendly, making it easier for users to apply for loans, repay loans, and keep track of their debt. The goals are as follows in the interim.",
-    list: [
-      "Make the registration process simple, brief and easy.",
-      "Users will have the option to add and remove numerous account numbers at any time.",
-      "Users will be able to track their loans and view loans that have been granted and denied.",
-    ],
-  },
-  {
-    title: "Tools",
-    icons: [
-      { link: "/svg/figma_colored.svg" },
-      { link: "/svg/google_docs.svg" },
-      { link: "/svg/google_meet.svg" },
-    ],
-  },
-];
-const ProjectOverview = ({ color }: Props) => {
+
+const ProjectOverview = ({ style, data }: Props) => {
+  const { color, icon_className, bullet_className } = style;
   return (
     <section>
       <div className="screen-center my-10">
@@ -45,36 +21,72 @@ const ProjectOverview = ({ color }: Props) => {
           <p className={`text-${color} font-black p-small`}>Project Overview</p>
         </div>
         {/* box  */}
-        <div className="flex flex-col lg:flex-row my-10 gap-3">
-          <div className="lg:flex-1 flex gap-2">
-            {/* over view  */}
-            <div className="flex gap-2 mt-5">
-              <div className="icon_circle border-[#21b44a]  bg-[#dbf8ea]  ">
-                <Book color="#21B44A" />
+        <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between my-10 lg:my-20 gap-10">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className={`flex  gap-2 ${
+                index < 3 ? "lg:w-[70%]" : "lg:max-w-[25%]"
+              } ${index === 3 && "lg:order-2"} ${index === 4 && "lg:order-4"} ${
+                index === 5 && "lg:order-6"
+              } ${index === 2 && "lg:order-5"} ${index === 1 && "lg:order-3"} `}
+            >
+              <div className="flex gap-2 lg:mt-5 ">
+                <div className={`icon_circle  ${icon_className}`}>
+                  {
+                    [
+                      <Lens key="lens" color={color} />,
+                      <Book key="book" color={color} />,
+                      <Bulb key="bulb" color={color} />,
+                      <CheckBook key="checkbook" color={color} />,
+                      <Clock key="clock" color={color} />,
+                      <Spanner key="spanner" color={color} />,
+                    ][index]
+                  }
+                </div>
+              </div>
+              <div className="">
+                <p className="h4 font-extrabold">{item.title}</p>
+                <div>
+                  <p className="p font-normal">{item.text && item.text}</p>
+                  {item.list && (
+                    <ol className="mt-4">
+                      {item.list.map((list, index) => (
+                        <li key={index} className="flex gap-2 lg:gap-5">
+                          <div
+                            className={`my-auto w-[6px] lg:w-[9px] h-[6px] lg:h-[9px] rounded-full ${bullet_className}`}
+                          ></div>
+                          <p className="p font-normal mb-2">{list}</p>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                  {item.icons && (
+                    <ul className="flex gap-3">
+                      {item.icons.map((item, index) => (
+                        <li key={index}>
+                          <Image
+                            alt="social icons"
+                            src={item.link}
+                            placeholder="blur"
+                            blurDataURL="/Images/profile__.png"
+                            width={700}
+                            height={475}
+                            priority
+                            sizes="100vw"
+                            style={{
+                              width: "100%",
+                            }}
+                            className="object-cover h-auto"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             </div>
-            <div className="">
-              <p className="h4 font-extrabold">Overview</p>
-              <p className="p font-normal">
-                In order to assist users in achieving their personal and
-                professional goals, Snappy is a digital lending application that
-                employs artificial intelligence to forecast user behaviour on
-                loan offers.
-              </p>
-            </div>
-          </div>
-          {/* my role  */}
-          <div className="flex gap-2 w-1/3 justi">
-            <div className="flex gap-2 mt-5">
-              <div className="icon_circle border-[#21b44a]  bg-[#dbf8ea]  ">
-                <CheckBook color="#21B44A" />
-              </div>
-            </div>
-            <div className="">
-              <p className="h4 font-extrabold">My Role</p>
-              <p className="p font-normal">Solo UI/UX Designer</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

@@ -2,27 +2,27 @@ import { Project } from "@/Interfaces/Projects";
 
 export const projects: Project[] = [
   {
-    image: "/Images/projects/snappy_loan.png",
+    image: "/Images/projects/snappy_loan.svg",
     title: "Snappy Loan: Loan App (Fintech)",
     link: "/projects/snappy-loan",
   },
   {
-    image: "/Images/projects/Libraria.png",
+    image: "/Images/projects/libraria.svg",
     title: "Libraria: Online Bookstore (E-commerce)",
     link: "/projects/libraria",
   },
   {
-    image: "/Images/projects/classic_park.png",
+    image: "/Images/projects/classic_park.svg",
     title: "Classic Park: Car Park Booking App (Utility)",
     link: "/projects/classic_park",
   },
   {
-    image: "/Images/projects/flet_ride.png",
+    image: "/Images/projects/flet_ride.svg",
     title: "Flet Ride: Car Booking (Logistic)",
     link: "/projects/flet_ride",
   },
   {
-    image: "/Images/projects/ui_designs.png",
+    image: "/Images/projects/ui_designs.svg",
     title: "UI Designs",
     link: "/projects/ui_designs",
   },

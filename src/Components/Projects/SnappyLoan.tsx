@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import Overview from "../SnappyLoan/Overview";
 import ProjectOverview from "../Reusable/ProjectOverview";
+import Design from "../Home/Design";
+import { snappy_data, snappy_style } from "@/utils/data/snappy";
 
 interface Props {}
 const SnappyLoan = (props: Props) => {
@@ -9,7 +11,7 @@ const SnappyLoan = (props: Props) => {
     <>
       <section className="w-full">
         <Image
-          src="/Images/projects/snappy_loan.png"
+          src="/Images/projects/snappy_loan.svg"
           alt="Snappy Loan Project"
           placeholder="blur"
           blurDataURL="/Images/profile__.png"
@@ -23,7 +25,8 @@ const SnappyLoan = (props: Props) => {
           }}
         />
       </section>
-      <ProjectOverview color="pri_200" />
+      <ProjectOverview style={snappy_style} data={snappy_data} />
+      <Design />
     </>
   );
 };

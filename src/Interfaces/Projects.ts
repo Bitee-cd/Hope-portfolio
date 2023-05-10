@@ -15,3 +15,10 @@ export interface OverViewData {
 interface IconLink {
   link: string;
 }
+
+export interface OverViewStyle {
+  color: string;
+  className: string;
+  icon_className: string;
+  bullet_className: string;
+}

@@ -1,6 +1,6 @@
 import { IconProps } from "@/Interfaces/Icon";
 import * as React from "react";
-const SVGComponent = ({ color }: IconProps) => (
+const Spanner = ({ color }: IconProps) => (
   <svg
     width={26}
     height={24}
@@ -14,4 +14,4 @@ const SVGComponent = ({ color }: IconProps) => (
     />
   </svg>
 );
-export default SVGComponent;
+export default Spanner;

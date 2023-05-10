@@ -17,7 +17,7 @@ const socialIcons = [
 ];
 const Footer = (props: Props) => {
   const router = useRouter();
-  
+  const date = new Date();
   return (
     <>
       <section
@@ -36,7 +36,7 @@ const Footer = (props: Props) => {
               </li>
             ))}
           </ul>
-          <p>2023, hopejonah.co.uk</p>
+          <p>{date.getFullYear()}, hopejonah.co.uk</p>
         </div>
       </section>
     </>
