@@ -21,4 +21,5 @@ export interface OverViewStyle {
   className: string;
   icon_className: string;
   bullet_className: string;
+  text_color: string;
 }

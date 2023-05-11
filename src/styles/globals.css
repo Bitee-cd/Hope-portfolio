@@ -32,13 +32,19 @@ body {
   @apply text-[30px] md:text-[50px] lg:text-[60px] 2xl:text-[80px];
 }
 .h4 {
-  @apply text-[20px] md:text-[30px] lg:text-[40px] 2xl:text-[50px];
+  @apply text-[20px] md:text-[30px] lg:text-[40px] lg:leading-[53px] xl:text-[50px];
+}
+.h5 {
+  @apply text-base md:text-xl lg:text-3xl xl:text-4xl;
 }
 .p {
-  @apply text-base md:text-xl lg:text-xl 2xl:text-2xl;
+  @apply text-base md:text-xl lg:text-xl xl:text-[28px] xl:leading-[39px];
 }
 .p-small {
-  @apply text-sm md:text-base lg:text-xl 2xl:text-xl;
+  @apply text-sm md:text-[14px] leading-[19px] lg:text-lg xl:text-[22px] xl:leading-[29px];
+}
+.custom_border {
+  @apply rounded-[20px] md:rounded-[40px] xl:rounded-[60px] border-[0.5px] border-black;
 }
 /* global styles  */
 
@@ -151,14 +157,23 @@ body {
   transition: transform 0.5s;
 }
 .icon_circle {
-  @apply w-[40px] h-[40px] flex items-center justify-center rounded-full border;
+  @apply w-[20px] h-[20px] p-1 md:p-2 md:w-[40px] md:h-[40px] flex items-center justify-center rounded-full border;
 }
 
 /* over-view styles  */
 .icon_green {
   @apply border-[#21b44a] bg-[#dbf8ea];
 }
-.bullet_green {
-  @apply bg-[#21b44a];
+
+.unordered {
+  list-style: none;
+}
+.unordered li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #21b44a; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 /* over-view styles  */
