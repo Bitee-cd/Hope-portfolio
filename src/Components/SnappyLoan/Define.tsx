@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../Reusable/Title";
 import { COLORS } from "@/utils/constants";
 import { define, prioritization } from "@/utils/data/snappy";
-import Image from "next/image";
 import List from "../Reusable/List";
 import ResponsiveImage from "../Reusable/Image";
 interface Props {}
@@ -27,10 +26,15 @@ const Define = (props: Props) => {
         <div className="my-10">
           <p className="h4 font-extrabold mb-5">Prioritization</p>
           <div className="my-5 custom_border">
-            <div className="w-[90%] mx-auto justify-between flex flex-col lg:flex-row lg:flex-wrap gap-10  my-10 xl:my-20">
+            <div className="w-[90%] mx-auto justify-between px-2 flex flex-col lg:flex-row lg:flex-wrap gap-5 lg:gap-10  my-10 xl:my-20">
               {prioritization.map((item, index) => (
-                <div className="lg:w-[45%]" key={index}>
-                  <p className="h5 font-bold mb-5">{item.title}</p>
+                <div
+                  className={`lg:w-[45%] ${index === 1 && " lg:order-2"} ${
+                    index === 2 && " lg:order-5"
+                  }`}
+                  key={index}
+                >
+                  <p className="h5 font-bold mb-2 lg:mb-5">{item.title}</p>
                   <ul className="unordered">
                     {item.text.map((text, index) => (
                       <List key={index} text={text} />

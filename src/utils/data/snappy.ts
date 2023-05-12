@@ -1,4 +1,8 @@
-import { OverViewData, OverViewStyle } from "@/Interfaces/Projects";
+import {
+  OverViewData,
+  OverViewStyle,
+  TitleTextImage,
+} from "@/Interfaces/Projects";
 
 export const snappy_data: OverViewData[] = [
   {
@@ -45,7 +49,7 @@ export const understand_questions = [
   "Do you feel comfortable releasing your personal information before getting a loan? ",
   "Do you get your loan immediately when you apply ?",
 ];
-export const pain_points = [
+export const pain_points: TitleTextImage[] = [
   {
     title: "Lack of trust",
     text: "Many users are worried with giving out their sensitive information without knowing if the loan will be granted. This long process of registration discourage users to even attempt to get loans.",
@@ -86,12 +90,7 @@ export const prioritization = [
       "Users will not fill in their information till they explore the app and have need to apply for loans",
     ],
   },
-  {
-    title: "Improved UI",
-    text: [
-      "Make sure the User interface is appealing and easy to navigate through",
-    ],
-  },
+
   {
     title: "Loan Process",
     text: [
@@ -100,45 +99,103 @@ export const prioritization = [
     ],
   },
   {
+    title: "Customer Care",
+    text: [
+      "Provide customer care support service for users to complain about any glitch that may arise",
+    ],
+  },
+  {
+    title: "Improved UI",
+    text: [
+      "Make sure the User interface is appealing and easy to navigate through",
+    ],
+  },
+  {
     title: "Repayment Process",
     text: [
       "Make the repayment easy by providing either payment with card or bank transfer.",
     ],
   },
-  {
-    title: "Sign up process",
-    text: [
-      "Provide customer care support service for users to complain about any glitch that may arise",
-    ],
-  },
 ];
-export const final_design_impementation = [
+export const final_design_impementation: TitleTextImage[] = [
   {
     title: "Onboarding, Sign up and Login Screens",
     text: "The onboarding screen(s) are intended to help users get a basic understanding of the application, while the splash screen displays the branding for the app. The registration procedure was intended to be quick and easy, without too many steps. I moved the verification process to when a user needs to apply for a loan after going through the app.",
-    image: "onboarding.svg",
+    image: ["onboarding.svg"],
   },
   {
     title: "Loan Verification",
-    text: "The user is informed about the loan verification procedure form and the time it will take upon registration. This only applies to first-time borrowers who want to apply for a loan. However, it is an important step that must be taken before a user asks for a loa",
-    image: "verification.svg",
+    text: "The user is informed about the loan verification procedure form and the time it will take upon registration. This only applies to first-time borrowers who want to apply for a loan. However, it is an important step that must be taken before a user asks for a loan",
+    image: ["verification.svg"],
   },
   {
     title: "Loan Application",
     text: "Upon loan verification, the user successfully apply for loan provided calculated by AI with the information provided by the user.",
-    image: "application.svg",
+    image: ["application.svg"],
   },
   {
     title: "Repay Loan",
     text: "Users are able to repay their loans with ease. Two repayment options was provided.",
-    image: "repay.svg",
+    image: ["repay.svg"],
   },
   {
     title: "Other Screens",
-    image: "other.svg",
+    image: ["other.svg"],
   },
   {
     title: "Empty State",
-    image: "empty.svg",
+    image: ["empty.svg"],
+  },
+];
+export const conclusion = [
+  {
+    title: "Onboarding screens",
+    text: "After conducting an A/B test with the users, a few modifications to the onboarding page were made in order to simplify it and eliminate repetition. The application's information was designed on a single screen, sliding in at a 400ms rate. Instead of observing or bypassing the entire process, users simply swipe the button to proceed with the application.The majority of prospective users prefered the new design over the previous one.",
+    image: ["onboarding_a.svg", "onboarding_b.svg"],
+  },
+  {
+    title: "Home Screen",
+    text: "The home screen has undergone a few modifications for convenience. All of the buttons' sizes were changed, and a new, specially made button was made for Transaction history. The majority of prospective users preferred the new design over the previous one.",
+    image: ["home_a.svg", "home_b.svg"],
+  },
+];
+export const impact: TitleTextImage[] = [
+  {
+    title: "SEQ AVG.",
+    text: "A 6.0 Average Score",
+  },
+  {
+    title: "NPS Score",
+    text: "85% NPS score",
+  },
+  {
+    title: "Completion Rate AVG.",
+    text: "A 90 % Average Score",
+  },
+  {
+    title: "SUS AVG.",
+    text: "A 85  Average Score",
+  },
+  {
+    title: "WHAT DOES THIS MEAN",
+    text: "Regarding the business concern, these figures showed that a larger group of users could successfully execute difficult activities, enhancing the system's usability and encouraging wider adoption.",
+  },
+];
+
+export const lesson = [
+  {
+    title: "Lesson Learned",
+    text: [
+      "UReceiving comments from prospective users and making all the necessary adjustments was a satisfying experience.",
+      "The process of developing a product from its first design concept to its finished, functional state is lengthy and exciting.",
+      "I gained the capacity to distinguish between my own presumptions and the results of the usability testing and user interviews.",
+    ],
+  },
+
+  {
+    title: "Next Step",
+    text: [
+      "To ensure that the users like the product and that the pain points have been properly addressed, more usability studies should be conducted. A design is never final, so I'd like to make the required adjustments based on the results of additional usability tests.",
+    ],
   },
 ];

@@ -177,3 +177,8 @@ body {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 /* over-view styles  */
+.grid_box {
+  display: grid;
+
+  @apply place-items-start justify-items-start gap-x-1 grid-cols-[20px,1fr] md:grid-cols-[40px,1fr];
+}

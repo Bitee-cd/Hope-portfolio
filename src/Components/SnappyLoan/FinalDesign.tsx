@@ -1,6 +1,7 @@
 import { final_design_impementation } from "@/utils/data/snappy";
 import React from "react";
 import ResponsiveImage from "../Reusable/Image";
+import HeaderTextImageGroup from "../Reusable/HeaderTextImageGroup";
 
 const FinalDesign = () => {
   return (
@@ -15,16 +16,7 @@ const FinalDesign = () => {
         </div>
         <div className="my-10 lg:my-20 flex flex-col gap-10 lg:gap-20 ">
           {final_design_impementation.map((item, index) => (
-            <div className="" key={index}>
-              <p className="h5 font-semibold mb-5">{item.title}</p>
-              <p className="p">{item.text}</p>
-              <div className="my-10 lg:my-20">
-                <ResponsiveImage
-                  src={`/Images/snappy_loan/${item.image}`}
-                  alt={item.title}
-                />
-              </div>
-            </div>
+            <HeaderTextImageGroup item={item} key={index} />
           ))}
         </div>
       </div>

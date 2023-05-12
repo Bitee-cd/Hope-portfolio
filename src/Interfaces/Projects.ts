@@ -23,3 +23,8 @@ export interface OverViewStyle {
   bullet_className: string;
   text_color: string;
 }
+export interface TitleTextImage {
+  title: string;
+  text?: string;
+  image?: string[];
+}

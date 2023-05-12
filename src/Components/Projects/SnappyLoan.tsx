@@ -11,6 +11,9 @@ import Ideate from "../SnappyLoan/Ideate";
 import SnappyDesign from "../SnappyLoan/Design";
 import FinalDesign from "../SnappyLoan/FinalDesign";
 import ResponsiveImage from "../Reusable/Image";
+import Conclusion from "../SnappyLoan/Conclusion";
+import Pagination from "../Reusable/Pagination";
+import { pages } from "@/utils/constants";
 
 interface Props {}
 const SnappyLoan = (props: Props) => {
@@ -28,6 +31,11 @@ const SnappyLoan = (props: Props) => {
       <Ideate />
       <SnappyDesign />
       <FinalDesign />
+      <Conclusion />
+      <Pagination
+        prev={`${pages.project}${pages.ui_design}`}
+        next={`${pages.project}${pages.libraria}`}
+      />
     </>
   );
 };
