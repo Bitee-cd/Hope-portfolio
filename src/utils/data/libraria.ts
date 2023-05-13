@@ -151,7 +151,7 @@ export const design: TitleTextImage[] = [
 export const final_design: TitleTextImage[] = [
   {
     title: "Homepage",
-    image: ["/libraria/homepage.svg"],
+    image: ["/libraria/homepage.png"],
   },
   {
     title: "Catalog",
