@@ -10,7 +10,7 @@ const ResponsiveImage = ({ src, alt }: Props) => {
       src={src}
       alt={alt}
       placeholder="blur"
-      blurDataURL="/Images/profile__.png"
+      blurDataURL="/Images/hope_white.png"
       width={700}
       height={475}
       priority

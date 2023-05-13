@@ -1,4 +1,6 @@
+import Ideate from "@/Components/Reusable/Ideate";
 import {
+  Conclusion,
   OverViewData,
   OverViewStyle,
   TitleTextImage,
@@ -38,8 +40,8 @@ export const snappy_style: OverViewStyle = {
   color: "#21B44A",
   text_color: "text-[#21B44A]",
   className: "green",
-  icon_className: "icon_green",
-  bullet_className: "bullet_green",
+  icon_className: "border-[#21b44a] bg-[#dbf8ea]",
+  bullet_className: "snappy_bullet",
 };
 
 export const understand_questions = [
@@ -49,29 +51,36 @@ export const understand_questions = [
   "Do you feel comfortable releasing your personal information before getting a loan? ",
   "Do you get your loan immediately when you apply ?",
 ];
-export const pain_points: TitleTextImage[] = [
+const list: TitleTextImage[] = [
   {
     title: "Lack of trust",
     text: "Many users are worried with giving out their sensitive information without knowing if the loan will be granted. This long process of registration discourage users to even attempt to get loans.",
-  },
-  {
-    title: "Complex User Interface",
-    text: "Most users complain on how to navigate through the apps and carry out their activities successfully  which frustrate them",
   },
   {
     title: "Late arrival of loans",
     text: "Users complain about loans not disbursed to their account immediately and sometimes loans are not disbursed but the will be notify that their loans are approved.",
   },
   {
+    title: "Complex User Interface",
+    text: "Most users complain on how to navigate through the apps and carry out their activities successfully  which frustrate them",
+  },
+
+  {
     title: "Network issues",
     text: "Most time the app crashes. In some cases the apps does not allow users to repay their loans online rather offline which is frustrating.",
   },
 ];
+export const pain_points = {
+  title:
+    "After completing the interview and user reviews on Google play store and apple store, the following are the pain points discovered:",
+  list: list,
+};
+
 export const define = [
   {
     title: "User Persona",
     text: "I made a representatives based on the information I collected from interviewing users and reviews in order to gain a better understanding of their concerns and needs. I can now come up with better concepts.",
-    images: [
+    image: [
       "/Images/snappy_loan/user_halima.svg",
       "/Images/snappy_loan/user_mandela.svg",
     ],
@@ -79,7 +88,7 @@ export const define = [
   {
     title: "User Journey",
     text: "I designed a user journey map based on the user personas to capture the pertinent situations and pain points users may encounter after chatting with numerous target consumers about their real-life expectations and experiences.",
-    images: ["/Images/snappy_loan/journey_halima.svg"],
+    image: ["/Images/snappy_loan/journey_halima.svg"],
   },
 ];
 
@@ -121,56 +130,48 @@ export const final_design_impementation: TitleTextImage[] = [
   {
     title: "Onboarding, Sign up and Login Screens",
     text: "The onboarding screen(s) are intended to help users get a basic understanding of the application, while the splash screen displays the branding for the app. The registration procedure was intended to be quick and easy, without too many steps. I moved the verification process to when a user needs to apply for a loan after going through the app.",
-    image: ["onboarding.svg"],
+    image: ["/snappy_loan/onboarding.svg"],
   },
   {
     title: "Loan Verification",
     text: "The user is informed about the loan verification procedure form and the time it will take upon registration. This only applies to first-time borrowers who want to apply for a loan. However, it is an important step that must be taken before a user asks for a loan",
-    image: ["verification.svg"],
+    image: ["/snappy_loan/verification.svg"],
   },
   {
     title: "Loan Application",
     text: "Upon loan verification, the user successfully apply for loan provided calculated by AI with the information provided by the user.",
-    image: ["application.svg"],
+    image: ["/snappy_loan/application.svg"],
   },
   {
     title: "Repay Loan",
     text: "Users are able to repay their loans with ease. Two repayment options was provided.",
-    image: ["repay.svg"],
+    image: ["/snappy_loan/repay.svg"],
   },
   {
     title: "Other Screens",
-    image: ["other.svg"],
+    image: ["/snappy_loan/other.svg"],
   },
   {
     title: "Empty State",
-    image: ["empty.svg"],
+    image: ["/snappy_loan/empty.svg"],
   },
 ];
-export const conclusion = [
-  {
-    title: "Onboarding screens",
-    text: "After conducting an A/B test with the users, a few modifications to the onboarding page were made in order to simplify it and eliminate repetition. The application's information was designed on a single screen, sliding in at a 400ms rate. Instead of observing or bypassing the entire process, users simply swipe the button to proceed with the application.The majority of prospective users prefered the new design over the previous one.",
-    image: ["onboarding_a.svg", "onboarding_b.svg"],
-  },
-  {
-    title: "Home Screen",
-    text: "The home screen has undergone a few modifications for convenience. All of the buttons' sizes were changed, and a new, specially made button was made for Transaction history. The majority of prospective users preferred the new design over the previous one.",
-    image: ["home_a.svg", "home_b.svg"],
-  },
-];
-export const impact: TitleTextImage[] = [
+const impact: TitleTextImage[] = [
   {
     title: "SEQ AVG.",
     text: "A 6.0 Average Score",
   },
   {
-    title: "NPS Score",
-    text: "85% NPS score",
-  },
-  {
-    title: "Completion Rate AVG.",
-    text: "A 90 % Average Score",
+    data: [
+      {
+        title: "NPS Score",
+        text: "85% NPS score",
+      },
+      {
+        title: "Completion Rate AVG.",
+        text: "A 90 % Average Score",
+      },
+    ],
   },
   {
     title: "SUS AVG.",
@@ -182,10 +183,10 @@ export const impact: TitleTextImage[] = [
   },
 ];
 
-export const lesson = [
+const lesson = [
   {
     title: "Lesson Learned",
-    text: [
+    texts: [
       "UReceiving comments from prospective users and making all the necessary adjustments was a satisfying experience.",
       "The process of developing a product from its first design concept to its finished, functional state is lengthy and exciting.",
       "I gained the capacity to distinguish between my own presumptions and the results of the usability testing and user interviews.",
@@ -194,8 +195,31 @@ export const lesson = [
 
   {
     title: "Next Step",
-    text: [
+    texts: [
       "To ensure that the users like the product and that the pain points have been properly addressed, more usability studies should be conducted. A design is never final, so I'd like to make the required adjustments based on the results of additional usability tests.",
     ],
+  },
+];
+const data = [
+  {
+    title: "Onboarding screens",
+    text: "After conducting an A/B test with the users, a few modifications to the onboarding page were made in order to simplify it and eliminate repetition. The application's information was designed on a single screen, sliding in at a 400ms rate. Instead of observing or bypassing the entire process, users simply swipe the button to proceed with the application.The majority of prospective users prefered the new design over the previous one.",
+    image: ["/snappy_loan/onboarding_a.svg", "/snappy_loan/onboarding_b.svg"],
+  },
+  {
+    title: "Home Screen",
+    text: "The home screen has undergone a few modifications for convenience. All of the buttons' sizes were changed, and a new, specially made button was made for Transaction history. The majority of prospective users preferred the new design over the previous one.",
+    image: ["/snappy_loan/home_a.svg", "/snappy_loan/home_b.svg"],
+  },
+];
+export const conclusion: Conclusion = {
+  data: data,
+  impact: impact,
+  lesson: lesson,
+};
+export const ideate: TitleTextImage[] = [
+  {
+    title: "Information Architecture",
+    image: ["/Images/snappy_loan/snappy_ideate.svg"],
   },
 ];

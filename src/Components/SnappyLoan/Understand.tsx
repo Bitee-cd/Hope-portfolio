@@ -24,7 +24,7 @@ const Understand = (props: Props) => {
           </p>
           <div className="my-5">
             <p className="p">Some of the following questions were asked:</p>
-            <ul className="unordered flex flex-col gap-2 my-5 ">
+            <ul className="unordered snappy_bullet flex flex-col gap-2 my-5 ">
               {understand_questions.map((item) => (
                 <List key={item} text={item} />
               ))}

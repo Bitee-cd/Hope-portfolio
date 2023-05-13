@@ -161,20 +161,25 @@ body {
 }
 
 /* over-view styles  */
-.icon_green {
-  @apply border-[#21b44a] bg-[#dbf8ea];
-}
 
 .unordered {
   list-style: none;
 }
-.unordered li::before {
+.snappy_bullet li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #21b44a; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.libraria_bullet li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #183a1d; /* Change the color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 /* over-view styles  */
 .grid_box {

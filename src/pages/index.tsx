@@ -9,7 +9,7 @@ import Tools from "@/Components/Reusable/Tools";
 export default function Home() {
   return (
     <div className="bg-sec">
-      <Layout>
+      <Layout title="Home">
         <>
           <Hero />
           <Introduction />

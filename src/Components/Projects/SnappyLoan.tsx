@@ -3,32 +3,48 @@ import React from "react";
 import Overview from "../SnappyLoan/Overview";
 import ProjectOverview from "../Reusable/ProjectOverview";
 import Design from "../Home/Design";
-import { snappy_data, snappy_style } from "@/utils/data/snappy";
+import {
+  define,
+  ideate,
+  pain_points,
+  snappy_data,
+  snappy_style,
+} from "@/utils/data/snappy";
 import Understand from "../SnappyLoan/Understand";
-import PainPoints from "../SnappyLoan/PainPoints";
-import Define from "../SnappyLoan/Define";
-import Ideate from "../SnappyLoan/Ideate";
+import PainPoints from "../Reusable/PainPoints";
+import Define from "../Reusable/Define";
+import Ideate from "../Reusable/Ideate";
 import SnappyDesign from "../SnappyLoan/Design";
 import FinalDesign from "../SnappyLoan/FinalDesign";
 import ResponsiveImage from "../Reusable/Image";
 import Conclusion from "../SnappyLoan/Conclusion";
 import Pagination from "../Reusable/Pagination";
-import { pages } from "@/utils/constants";
+import { COLORS, pages } from "@/utils/constants";
+import Proritization from "../SnappyLoan/Proritization";
 
 interface Props {}
 const SnappyLoan = (props: Props) => {
   return (
     <>
-      <ResponsiveImage
-        src="/Images/projects/snappy_loan.png"
-        alt="Snappy Loan Project"
-      />
+      <div className="hidden lg:block">
+        <ResponsiveImage
+          src="/Images/projects/snappy_loan.png"
+          alt="Snappy Loan Project"
+        />
+      </div>
+      <div className="lg:hidden">
+        <ResponsiveImage
+          src="/Images/snappy_loan/snappy_mobile.svg"
+          alt="Snappy Loan Project"
+        />
+      </div>
       <ProjectOverview style={snappy_style} data={snappy_data} />
       <Design />
       <Understand />
-      <PainPoints />
-      <Define />
-      <Ideate />
+      <PainPoints pain_points={pain_points} />
+      <Define define={define} color={`text-[${COLORS.green_dark}]`} />
+      <Proritization />
+      <Ideate title_color={`text-[${COLORS.green_dark}]`} ideate={ideate} />
       <SnappyDesign />
       <FinalDesign />
       <Conclusion />

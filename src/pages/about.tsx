@@ -5,7 +5,7 @@ import React from "react";
 interface Props {}
 const About = (props: Props) => {
   return (
-    <Layout>
+    <Layout title="About">
       <>
         <AboutHope />
         <Principles />

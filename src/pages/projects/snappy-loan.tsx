@@ -4,7 +4,7 @@ import React from "react";
 interface Props {}
 const SnappyLoanPage = (props: Props) => {
   return (
-    <Layout>
+    <Layout title="Snappy Loan">
       <SnappyLoan />
     </Layout>
   );

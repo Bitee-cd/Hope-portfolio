@@ -24,7 +24,14 @@ export interface OverViewStyle {
   text_color: string;
 }
 export interface TitleTextImage {
-  title: string;
+  title?: string;
   text?: string;
   image?: string[];
+  texts?: string[];
+  data?: { title: string; text: string }[];
+}
+export interface Conclusion {
+  data?: TitleTextImage[];
+  impact: TitleTextImage[];
+  lesson: TitleTextImage[];
 }
