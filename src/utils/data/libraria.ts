@@ -44,7 +44,7 @@ export const design_strategy: TitleTextImage[] = [
   },
   {
     title: "Target Audience",
-    text: "TProfessionals in the workforce, students, stay-at-home moms, and all bookworms. It also applies to children and teenagers who like reading comic books and fantasy.",
+    text: "Professionals in the workforce, students, stay-at-home moms, and all bookworms. It also applies to children and teenagers who like reading comic books and fantasy.",
   },
   {
     title: "General Task",
@@ -212,7 +212,7 @@ const lesson = [
     title: "Lesson Learned",
     texts: [
       "The case study has been challenging and engaging to work on. Receiving and putting to use comments from my interview was exciting and fulfilling. ",
-      "TStarting with the first design concepts, a product goes through a long and thrilling process of development until it is eventually functional.",
+      "Starting with the first design concepts, a product goes through a long and thrilling process of development until it is eventually functional.",
       "I became better at distinguishing my own beliefs from the findings of the user interviews.",
     ],
   },

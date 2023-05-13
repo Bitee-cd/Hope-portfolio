@@ -3,7 +3,7 @@ import ResponsiveImage from "../Reusable/Image";
 
 const Hero = () => {
   return (
-    <section className="max-w-[2000px] flex-col-reverse gap-y-5 lg:flex-row flex my-10">
+    <section className="mx-auto max-w-[2000px] flex-col-reverse gap-y-5 lg:flex-row flex my-10">
       <div className="lg:w-1/5 lg:ml-10 flex  items-center justify-center">
         <div className="flex items-center justify-center flex-col gap-5 lg:gap-10">
           <div className="flex items-center justify-center ">

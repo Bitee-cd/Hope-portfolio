@@ -27,8 +27,6 @@ const Understand = ({}: Props) => {
           </p>
 
           <div className="my-5">
-            <p className="p">Some of the following questions were asked:</p>
-
             <div className="my-10 lg:my-20 flex flex-col gap-10 lg:gap-20 ">
               {design_strategy.map((item, index) => (
                 <HeaderTextImageGroup
