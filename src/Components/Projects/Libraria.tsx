@@ -33,7 +33,7 @@ const LibrariaScreen = () => {
       <Ideate title_color={`text-[${COLORS.libraria_green}]`} ideate={ideate} />
       <LibrariaDesign />
       <FinalDesign />
-      <Conclusion />
+      <Conclusion />                      
       <Pagination
         prev={`${pages.project}${pages.snappy_loan}`}
         next={`${pages.project}${pages.classic_park}`}

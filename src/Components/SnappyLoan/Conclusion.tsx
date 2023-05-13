@@ -3,7 +3,6 @@ import Title from "../Reusable/Title";
 import { COLORS } from "@/utils/constants";
 import { conclusion } from "@/utils/data/snappy";
 import ReusableConclusion from "../Reusable/ReusableConculsion";
-import HeaderTextImageGroup from "../Reusable/HeaderTextImageGroup";
 interface Props {}
 const Conclusion = (props: Props) => {
   return (
@@ -25,11 +24,6 @@ const Conclusion = (props: Props) => {
               testing were also carried out.
             </p>
           </div>
-        </div>
-        <div className="my-10 lg:my-20">
-          {conclusion.data.map((item, index) => (
-            <HeaderTextImageGroup item={item} key={index} />
-          ))}
         </div>
       </section>
       <ReusableConclusion conclusion={conclusion} />

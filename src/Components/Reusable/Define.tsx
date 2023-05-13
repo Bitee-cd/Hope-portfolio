@@ -20,7 +20,7 @@ const Define = ({ define, color }: Props) => {
             {item.image &&
               item.image.map((image, index) => (
                 <div key={index} className="my-5">
-                  <ResponsiveImage src={image} alt={item.title} />
+                  <ResponsiveImage src={image} alt={item.title || 'Hope Honah Portfolio'} />
                 </div>
               ))}
           </div>
