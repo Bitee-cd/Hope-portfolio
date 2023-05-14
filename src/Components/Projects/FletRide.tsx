@@ -7,6 +7,10 @@ import Understand from "../FletRide/Understand";
 import Pagination from "../Reusable/Pagination";
 import { pages } from "@/utils/constants";
 import Conclusion from "../FletRide/Conclusion";
+import Define from "../FletRide/Define";
+import Ideate from "../FletRide/Ideate";
+import StyleDesign from "../FletRide/Design";
+import Mockups from "../FletRide/Mockups";
 
 const FletRideScreen = () => {
   return (
@@ -15,6 +19,11 @@ const FletRideScreen = () => {
       <ProjectOverview style={flet_style} data={flet_data} />
       <Design />
       <Understand />
+      <Conclusion />
+      <Define />
+      <Ideate />
+      <StyleDesign />
+      <Mockups />
       <Conclusion />
       <Pagination
         prev={`${pages.project}${pages.classic_park}`}

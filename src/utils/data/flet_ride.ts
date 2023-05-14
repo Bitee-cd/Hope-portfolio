@@ -95,3 +95,53 @@ export const conclusion: Conclusion = {
   impact: impact,
   lesson: lesson,
 };
+export const define = [
+  {
+    title: "User Persona",
+    image: ["/Images/flet_ride/user_persona.png"],
+  },
+  {
+    title: "Empathy Mapping",
+
+    image: ["/Images/flet_ride/empathy_mapping.png"],
+  },
+];
+export const design = [
+  {
+    title: "Wireframes",
+    image: ["/Images/flet_ride/wireframe.png"],
+  },
+  {
+    title: "Style Guide",
+
+    image: ["/Images/flet_ride/style_guide.png"],
+  },
+];
+export const mockups = [
+  {
+    title: "Onboarding Screens",
+    image: ["/Images/flet_ride/onboarding.png"],
+  },
+  {
+    title: "Login and Sign up Screens",
+
+    image: ["/Images/flet_ride/login.png"],
+  },
+  {
+    title: "Ride Booking",
+
+    image: [
+      "/Images/flet_ride/ride_booking_a.png",
+      "/Images/flet_ride/ride_booking_b.png",
+    ],
+  },
+  {
+    title: "Other Screens",
+
+    image: [
+      "/Images/flet_ride/other_a.png",
+      "/Images/flet_ride/other_b.png",
+      "/Images/flet_ride/other_c.png",
+    ],
+  },
+];

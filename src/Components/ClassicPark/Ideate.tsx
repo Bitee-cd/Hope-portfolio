@@ -1,8 +1,6 @@
 import React from "react";
 
 import { COLORS } from "@/utils/constants";
-
-import { TitleTextImage } from "@/Interfaces/Projects";
 import Title from "../Reusable/Title";
 import ResponsiveImage from "../Reusable/Image";
 import { ideate } from "@/utils/data/classic_park";
