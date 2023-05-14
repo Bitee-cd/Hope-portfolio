@@ -19,9 +19,11 @@ const Define = ({ define, color }: Props) => {
             </div>
             {item.image &&
               item.image.map((image, index) => (
-                <div key={index} className="my-5">
-                  <ResponsiveImage src={image} alt={item.title || 'Hope Honah Portfolio'} />
-                </div>
+                <ResponsiveImage
+                  src={image}
+                  key={index}
+                  alt={item.title || "Hope Honah Portfolio"}
+                />
               ))}
           </div>
         ))}

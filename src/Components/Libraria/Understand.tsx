@@ -52,7 +52,7 @@ const Understand = ({}: Props) => {
           </div>
           <div className="my-5 lg:my-10">
             <ResponsiveImage
-              src="/Images/libraria/competitive.svg"
+              src="/Images/libraria/competitive_analysis.png"
               alt="Libraria competitive analysis"
             />
           </div>

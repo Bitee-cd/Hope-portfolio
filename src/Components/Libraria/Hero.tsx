@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="flex-1 relative">
         <ResponsiveImage
           alt="Libraria Laptop"
-          src="/Images/libraria/laptop.svg"
+          src="/Images/libraria/laptop.png"
         />
         <div className="w-1/6  absolute right-0 top-0 -translate-x-1/2 translate-y-1/2">
           <ResponsiveImage

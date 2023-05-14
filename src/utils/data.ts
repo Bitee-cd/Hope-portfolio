@@ -14,16 +14,16 @@ export const projects: Project[] = [
   {
     image: "/Images/projects/classic_park.svg",
     title: "Classic Park: Car Park Booking App (Utility)",
-    link: "/projects/classic_park",
+    link: "/projects/classic-park",
   },
   {
     image: "/Images/projects/flet_ride.svg",
     title: "Flet Ride: Car Booking (Logistic)",
-    link: "/projects/flet_ride",
+    link: "/projects/flet-ride",
   },
   {
     image: "/Images/projects/ui_designs.svg",
     title: "UI Designs",
-    link: "/projects/ui_designs",
+    link: "/projects/ui-designs",
   },
 ];

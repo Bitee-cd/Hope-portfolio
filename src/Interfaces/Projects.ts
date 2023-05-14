@@ -29,6 +29,7 @@ export interface TitleTextImage {
   image?: string[];
   texts?: string[];
   data?: { title: string; text: string }[];
+  color?: string;
 }
 export interface Conclusion {
   data?: TitleTextImage[];

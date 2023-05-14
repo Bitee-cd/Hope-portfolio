@@ -165,6 +165,7 @@ body {
 .unordered {
   list-style: none;
 }
+/* snappy  */
 .snappy_bullet li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #21b44a; /* Change the color */
@@ -173,9 +174,21 @@ body {
   width: 1em;
   margin-left: -1em;
 }
+
+/* libraria  */
 .libraria_bullet li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #183a1d; /* Change the color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* classic park  */
+.classic_bullet li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #0157ff; /* Change the color */
   font-weight: bold;
   display: inline-block;
   width: 1em;

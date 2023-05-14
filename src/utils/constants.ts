@@ -2,12 +2,13 @@ export const COLORS = {
   green_dark: "#21B44A",
   blue_dark: "#0157FF",
   libraria_green: "#183A1D",
+  classic_blue: "#0157FF",
 };
 export const pages = {
   project: "/projects",
   snappy_loan: "/snappy-loan",
   libraria: "/libraria",
-  classic_park: "/classic_park",
-  flet_ride: "/flet_ride",
-  ui_design: "/ui_design",
+  classic_park: "/classic-park",
+  flet_ride: "/flet-ride",
+  ui_design: "/ui-design",
 };

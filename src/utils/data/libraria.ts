@@ -155,15 +155,15 @@ export const final_design: TitleTextImage[] = [
   },
   {
     title: "Catalog",
-    image: ["/libraria/catalogue.svg"],
+    image: ["/libraria/Catalogue.png"],
   },
   {
     title: "Product Detail",
-    image: ["/libraria/product_detail.svg"],
+    image: ["/libraria/product_detail.png"],
   },
   {
     title: "My Cart",
-    image: ["/libraria/my_cart.svg"],
+    image: ["/libraria/my_cart.png"],
   },
   {
     title: "Mobile Application",
