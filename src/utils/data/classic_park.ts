@@ -188,5 +188,36 @@ export const screens: TitleTextImage[] = [
   },
   {
     title: "Booking process and other Screens",
+    image: [
+      "/Images/classic_park/booking_a.png",
+      "/Images/classic_park/booking_b.png",
+    ],
+  },
+];
+export const wireframes: TitleTextImage[] = [
+  {
+    title: "Wireframe",
+    text: " I am now in the design process. This is where I quickly created the  wireframes. Components and elements are designed more clearly and precisely in wireframes",
+    image: ["/Images/classic_park/wireframes.png"],
+  },
+  {
+    title: "Moodboard",
+    text: "A mood board is a collage of photos, typefaces, features, icons, and UI components used to describe a project's visual vision.",
+    image: ["/Images/classic_park/moodboard.png"],
+  },
+  {
+    title: "App Logo",
+    text: "I simply wanted the logo to be basic and visually appealing. So I combined the two essential parts of my brand's design that I designed.",
+    image: ["/Images/classic_park/app_logo.png"],
+  },
+];
+export const user_interface: TitleTextImage[] = [
+  {
+    title: "UI Kits",
+    image: ["/Images/classic_park/ui_kits.png"],
+  },
+  {
+    title: "UI Components",
+    image: ["/Images/classic_park/ui_components.png"],
   },
 ];

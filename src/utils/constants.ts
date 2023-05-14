@@ -3,6 +3,7 @@ export const COLORS = {
   blue_dark: "#0157FF",
   libraria_green: "#183A1D",
   classic_blue: "#0157FF",
+  flet_purple: "#2A00AC",
 };
 export const pages = {
   project: "/projects",
@@ -10,5 +11,5 @@ export const pages = {
   libraria: "/libraria",
   classic_park: "/classic-park",
   flet_ride: "/flet-ride",
-  ui_design: "/ui-design",
+  ui_design: "/ui-designs",
 };
