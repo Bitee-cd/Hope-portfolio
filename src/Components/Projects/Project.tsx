@@ -5,6 +5,7 @@ import { projects } from "@/utils/data";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ResponsiveImage from "../Reusable/Image";
 interface Props {}
 
 const container = {
@@ -51,14 +52,7 @@ const Project = (props: Props) => {
               <div className="w-[90%] mx-auto my-5 md:my-10 border-inherit">
                 <p className="h4">{project.title}</p>
                 <div className="my-5">
-                  <img
-                    alt={project.title}
-                    src={project.image}
-                    style={{
-                      width: "100%",
-                    }}
-                    className="object-cover h-auto w-full"
-                  />
+                  <ResponsiveImage alt={project.title} src={project.image} />
                 </div>
                 <div className="mt-5">
                   <Link href={project.link}>
