@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement, useCallback, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Head from "next/head";
@@ -10,16 +10,17 @@ interface Props {
 
 const Layout = ({ children, title }: Props) => {
   const [nav, setNav] = useState<number>(0);
-  const handleNavHeight = (navHeight: number) => {
+
+  const handleNavHeight = useCallback((navHeight: number) => {
     setNav(navHeight);
-  };
+  }, []);
+
   return (
     <>
       <Head>
         <title>{title ? title + " - Hope Jonah" : "Hope Jonah"}</title>
-        <meta name="description" content="Texkoop Logistics Company" />
+        <meta name="description" content="Hope Jonah Product Designer" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </Head>
       <div
         className="flex flex-col min-h-screen"

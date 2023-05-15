@@ -20,15 +20,15 @@ const Navbar = ({ handleNavHeight }: Props) => {
       const navbarHeight = navbarRef.current?.offsetHeight;
       handleNavHeight(navbarHeight);
     }
-  }, [navbarRef?.current?.offsetHeight]);
+  }, [handleNavHeight, navbarRef?.current?.offsetHeight]);
 
   return (
     <section ref={navbarRef} className="bg-sec fixed top-0 w-full z-50">
       <div className="screen-center text-xl font-semibold lg:flex justify-between items-center py-2 lg:py-0">
         <div className="flex justify-between items-center">
-          <div className="w-[40px] md:w-[50px] lg:w-[60px] ">
+          <div className="w-[40px] md:w-[50px] lg:w-[70px] ">
             <Link href="/">
-              <ResponsiveImage src="/svg/logo.svg" alt="logo" />
+              <ResponsiveImage src="/Images/logo.png" alt="logo" />
             </Link>
           </div>
           <div
