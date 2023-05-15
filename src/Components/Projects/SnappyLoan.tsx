@@ -28,7 +28,7 @@ const SnappyLoan = (props: Props) => {
     <>
       <div className="hidden lg:block">
         <ResponsiveImage
-          src="/Images/projects/snappy_loan.png"
+          src="/Images/projects/snappy.png"
           alt="Snappy Loan Project"
         />
       </div>
