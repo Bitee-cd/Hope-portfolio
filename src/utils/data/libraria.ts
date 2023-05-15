@@ -174,11 +174,9 @@ export const final_design: TitleTextImage[] = [
     image: ["/libraria/mobile_b.svg"],
   },
   {
-    image: ["/libraria/mobile_c.svg"],
+    image: ["/libraria/mobile_c.png"],
   },
-  {
-    image: ["/libraria/mobile_d.svg"],
-  },
+ 
 ];
 const impact: TitleTextImage[] = [
   {

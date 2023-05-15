@@ -23,7 +23,7 @@ const HeaderTextImageGroup = ({ item, bullet_className }: Props) => {
       {item.image && (
         <div className="my-5 lg:my-10 flex gap-2 lg:gap-2 justify-between">
           {item.image.map((image, index) => (
-            <div key={index} className=" ">
+            <div key={index} className="w-full">
               <ResponsiveImage
                 src={`/Images${image}`}
                 alt={item.title || "Hope Jonah Portfolio"}
