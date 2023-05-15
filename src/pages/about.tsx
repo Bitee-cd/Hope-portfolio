@@ -6,10 +6,8 @@ interface Props {}
 const About = (props: Props) => {
   return (
     <Layout title="About">
-      <>
-        <AboutHope />
-        <Principles />
-      </>
+      <AboutHope />
+      <Principles />
     </Layout>
   );
 };

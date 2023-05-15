@@ -1,10 +1,10 @@
-import React, { ReactElement, useCallback, useState } from "react";
+import React, { ReactElement, ReactNode, useCallback, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Head from "next/head";
 
 interface Props {
-  children: ReactElement;
+  children: ReactNode;
   title: string;
 }
 
