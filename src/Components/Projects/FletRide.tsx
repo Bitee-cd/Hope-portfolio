@@ -11,12 +11,13 @@ import Define from "../FletRide/Define";
 import Ideate from "../FletRide/Ideate";
 import StyleDesign from "../FletRide/Design";
 import Mockups from "../FletRide/Mockups";
+import FletProjectOverview from "../FletRide/OverView";
 
 const FletRideScreen = () => {
   return (
     <>
       <Hero />
-      <ProjectOverview style={flet_style} data={flet_data} />
+      <FletProjectOverview />
       <Design />
       <Understand />
       <Conclusion />

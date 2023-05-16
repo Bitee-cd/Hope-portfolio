@@ -6,7 +6,6 @@ import {
 } from "@/Interfaces/Projects";
 
 export const flet_data: OverViewData[] = [
-  { title: "" },
   {
     title: "The problem",
     text: "People always need help with the problem of moving from one place to another. Most people use public transit because few can afford a car. Usually, when people try to use a taxi or cab, there are either no cabs available or extended lineups that may cause a delay. In a different situation, getting a vehicle that will do so right away when individuals need to transfer their rather large objects (furniture, appliances, etc.) cannot be easy. They consequently contact different logistic companies to get a car for that use.",
@@ -16,7 +15,7 @@ export const flet_data: OverViewData[] = [
     text: "Design a mobile app that allows customers to order cabs and other cargo transportation. The mobile application's user interface will be created to be simple, straightforward, and intuitive.",
   },
   { title: "My Role", text: "Solo UI/UX Designer" },
-  { title: "Duration", text: "Aug 2021 - Sept 2021" },
+  // { title: "Duration", text: "Aug 2021 - Sept 2021" },
   {
     title: "Tools",
     icons: [
