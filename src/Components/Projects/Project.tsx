@@ -49,7 +49,7 @@ const Project = (props: Props) => {
               ref={ref}
               key={index}
               variants={item}
-              className="border-[0.5px] lg:w-[80%] mx-auto hover:border-pri duration-300 border-ter rounded-[15px] md:rounded-[60px] "
+              className="border-[0.5px] mx-auto hover:border-pri duration-300 border-ter rounded-[15px] md:rounded-[60px] "
             >
               <div className="w-[90%] mx-auto my-2 lg:my-5  border-inherit">
                 <p className="h4">{project.title}</p>
