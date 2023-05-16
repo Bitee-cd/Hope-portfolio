@@ -10,10 +10,13 @@ import { useRouter } from "next/router";
 interface Props {}
 
 const socialIcons = [
-  { link: "", icon: <Twitter /> },
-  { link: "", icon: <LinkedIn /> },
-  { link: "", icon: <Behance /> },
-  { link: "", icon: <Github /> },
+  { link: "https://twitter.com/iam_elpis", icon: <Twitter /> },
+  {
+    link: "https://www.linkedin.com/in/hope-jonah-4b8233173/",
+    icon: <LinkedIn />,
+  },
+  { link: "https://www.behance.net/hopejonah360", icon: <Behance /> },
+  { link: "https://github.com/elpis360", icon: <Github /> },
 ];
 const Footer = (props: Props) => {
   const router = useRouter();

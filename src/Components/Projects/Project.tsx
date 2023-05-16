@@ -49,14 +49,14 @@ const Project = (props: Props) => {
               ref={ref}
               key={index}
               variants={item}
-              className="border-[0.5px]  hover:border-pri duration-300 border-ter rounded-[15px] md:rounded-[60px] "
+              className="border-[0.5px] lg:w-[80%] mx-auto hover:border-pri duration-300 border-ter rounded-[15px] md:rounded-[60px] "
             >
-              <div className="w-[90%] mx-auto my-5 md:my-10 border-inherit">
+              <div className="w-[90%] mx-auto my-2 lg:my-5  border-inherit">
                 <p className="h4">{project.title}</p>
-                <div className="my-5">
+                <div className="my-5 ">
                   <ResponsiveImage alt={project.title} src={project.image} />
                 </div>
-                <div className="mt-5">
+                <div className="mt-5 ">
                   <Link href={project.link}>
                     <Button
                       text={`${
