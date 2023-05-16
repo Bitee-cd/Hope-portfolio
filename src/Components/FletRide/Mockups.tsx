@@ -14,23 +14,27 @@ const Mockups = () => {
             created for IOS and Android devices.
           </p>
         </div>
-      </div>
-      {mockups.map((item, index) => (
-        <div className="my-10 flex flex-col gap-10" key={index}>
-          <div className="screen-center">
-            <p className="h4 font-extrabold text-center mb-5">{item.title}</p>
-          </div>
-          {item.image &&
-            item.image.map((image, index) => (
-              <div key={index} className="lg:my-10 my-5 mx-auto w-[80%]">
-                <ResponsiveImage
-                  src={image}
-                  alt={item.title || "Hope Honah Portfolio"}
-                />
-              </div>
-            ))}
+        <div className=" flex flex-col gap-5 lg:gap-10">
+          {mockups.map((item, index) => (
+            <div className="" key={index}>
+              <p className="h4 font-extrabold text-center mb-5">{item.title}</p>
+
+              {item.image &&
+                item.image.map((image, index) => (
+                  <div
+                    key={index}
+                    className="lg:my-10 my-5 mx-auto w-[70%] h-[auto]"
+                  >
+                    <ResponsiveImage
+                      src={image}
+                      alt={item.title || "Hope Honah Portfolio"}
+                    />
+                  </div>
+                ))}
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </section>
   );
 };

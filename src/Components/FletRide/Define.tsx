@@ -26,7 +26,7 @@ const Define = () => {
         ))}
 
         {/* story boarding  */}
-        <div className="my-10 flex flex-col gap-10">
+        <div className="lg:my-10 flex flex-col gap-5 lg:gap-10">
           <div className="">
             <p className="h4 font-extrabold mb-5">Story Boarding</p>
           </div>

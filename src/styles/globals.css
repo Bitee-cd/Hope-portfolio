@@ -29,19 +29,19 @@ body {
 }
 
 .h2 {
-  @apply text-[30px] md:text-[45px] lg:text-[55px] 2xl:text-[75px];
+  @apply text-[30px] md:text-[45px] lg:text-[55px];
 }
 .h4 {
-  @apply text-[20px] md:text-[28px] lg:text-[35px] lg:leading-[53px] xl:text-[45px];
+  @apply text-[20px] md:text-[28px] lg:text-[32px]  lg:leading-[53px];
 }
 .h5 {
-  @apply text-base md:text-xl lg:text-2xl xl:text-3xl;
+  @apply text-base md:text-xl lg:text-2xl;
 }
 .p {
-  @apply text-base md:text-lg lg:text-xl xl:text-[25px] xl:leading-[35px];
+  @apply text-base lg:text-lg;
 }
 .p-small {
-  @apply text-sm md:text-[14px] leading-[19px] lg:text-lg xl:text-[20px] xl:leading-[25px];
+  @apply text-sm md:text-[14px] leading-[19px] lg:text-base;
 }
 .custom_border {
   @apply rounded-[20px] md:rounded-[40px] xl:rounded-[60px] border-[0.5px] border-black;

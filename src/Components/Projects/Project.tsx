@@ -35,7 +35,9 @@ const Project = (props: Props) => {
   return (
     <section className="bg-sec ">
       <div className="screen-center text-ter flex flex-col gap-10 h-full py-10">
-        <h2 className="text-center h2 font-bold">Featured Projects</h2>
+        <h2 id="projects" className="text-center h2 font-bold">
+          Featured Projects
+        </h2>
         <motion.div
           // variants={container}
           // initial="hidden"

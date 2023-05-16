@@ -138,10 +138,6 @@ export const mockups = [
   {
     title: "Other Screens",
 
-    image: [
-      "/Images/flet_ride/other_a.png",
-      "/Images/flet_ride/other_b.png",
-      "/Images/flet_ride/other_c.png",
-    ],
+    image: ["/Images/flet_ride/other_a.png", "/Images/flet_ride/other.png"],
   },
 ];

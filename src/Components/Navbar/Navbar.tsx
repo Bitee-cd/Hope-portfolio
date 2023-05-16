@@ -47,16 +47,18 @@ const Navbar = ({ handleNavHeight }: Props) => {
           } flex lg:flex flex-col py-5 p font-medium lg:py-0 items-start lg:items-center lg:flex-row gap-14 gap-y-10 text-ter`}
         >
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/#projects" scroll={true}>
+              Projects
+            </Link>
           </li>
           <li>
             <Link href="/about">About me</Link>
           </li>
           <li>
-            <Link href="/projects">Resume</Link>
+            <Link href="/">Resume</Link>
           </li>
           <li>
-            <Link href="/projects">
+            <Link href="/">
               <Button text="Let's Talk" />
             </Link>
           </li>

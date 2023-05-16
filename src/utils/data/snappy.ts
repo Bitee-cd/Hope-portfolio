@@ -130,22 +130,22 @@ export const final_design_impementation: TitleTextImage[] = [
   {
     title: "Onboarding, Sign up and Login Screens",
     text: "The onboarding screen(s) are intended to help users get a basic understanding of the application, while the splash screen displays the branding for the app. The registration procedure was intended to be quick and easy, without too many steps. I moved the verification process to when a user needs to apply for a loan after going through the app.",
-    image: ["/snappy_loan/onboarding.svg"],
+    image: ["/snappy_loan/onboarding_.png"],
   },
   {
     title: "Loan Verification",
     text: "The user is informed about the loan verification procedure form and the time it will take upon registration. This only applies to first-time borrowers who want to apply for a loan. However, it is an important step that must be taken before a user asks for a loan",
-    image: ["/snappy_loan/verification.svg"],
+    image: ["/snappy_loan/verification.png"],
   },
   {
     title: "Loan Application",
     text: "Upon loan verification, the user successfully apply for loan provided calculated by AI with the information provided by the user.",
-    image: ["/snappy_loan/application.svg"],
+    image: ["/snappy_loan/application.png"],
   },
   {
     title: "Repay Loan",
     text: "Users are able to repay their loans with ease. Two repayment options was provided.",
-    image: ["/snappy_loan/repay.svg"],
+    image: ["/snappy_loan/repay.png"],
   },
   {
     title: "Other Screens",
@@ -204,12 +204,12 @@ const data = [
   {
     title: "Onboarding screens",
     text: "After conducting an A/B test with the users, a few modifications to the onboarding page were made in order to simplify it and eliminate repetition. The application's information was designed on a single screen, sliding in at a 400ms rate. Instead of observing or bypassing the entire process, users simply swipe the button to proceed with the application.The majority of prospective users prefered the new design over the previous one.",
-    image: ["/snappy_loan/onboarding_a.svg", "/snappy_loan/onboarding_b.svg"],
+    image: ["/snappy_loan/onboarding.png"],
   },
   {
     title: "Home Screen",
     text: "The home screen has undergone a few modifications for convenience. All of the buttons' sizes were changed, and a new, specially made button was made for Transaction history. The majority of prospective users preferred the new design over the previous one.",
-    image: ["/snappy_loan/home_a.svg", "/snappy_loan/home_b.svg"],
+    image: ["/snappy_loan/home_screen.png"],
   },
 ];
 export const conclusion: Conclusion = {
@@ -220,6 +220,6 @@ export const conclusion: Conclusion = {
 export const ideate: TitleTextImage[] = [
   {
     title: "Information Architecture",
-    image: ["/Images/snappy_loan/snappy_ideate.svg"],
+    image: ["/Images/snappy_loan/information_architecture.png"],
   },
 ];
