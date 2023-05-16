@@ -117,7 +117,7 @@ const FletProjectOverview = (props: Props) => {
               </div>
               <ul className=" ml-[20px] lg:ml-[40px] flex gap-3 items-center">
                 {icons.map((item, index) => (
-                  <li key={index} className="w-[30px] lg:w-[68px] ">
+                  <li key={index} className="w-[25px] lg:w-[50px] ">
                     <Image
                       alt="social icons"
                       src={item.link}
@@ -130,7 +130,7 @@ const FletProjectOverview = (props: Props) => {
                       style={{
                         width: "100%",
                       }}
-                      className="object-contain h-[36px] lg:h-[70px]"
+                      className="object-contain h-[25px] lg:h-[50px]"
                     />
                   </li>
                 ))}

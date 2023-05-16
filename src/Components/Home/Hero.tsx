@@ -17,7 +17,7 @@ const Hero = (props: Props) => {
                 Sophistication
               </span>
             </p>
-            <p className="text-end w-full text-[12px] md:text-xl lg:text-2xl font-[300]">
+            <p className="text-end w-full text-[12px] text-base  font-[300]">
               Leonardo da Vinci
             </p>
           </div>
