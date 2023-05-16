@@ -1,5 +1,8 @@
 import "../styles/globals.css";
 import dynamic from "next/dynamic";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/scrollbar";
 // import type { AppProps } from "next/app";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
