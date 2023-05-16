@@ -81,8 +81,8 @@ export const define = [
     title: "User Persona",
     text: "I made a representatives based on the information I collected from interviewing users and reviews in order to gain a better understanding of their concerns and needs. I can now come up with better concepts.",
     image: [
-      "/Images/snappy_loan/user_halima.svg",
-      "/Images/snappy_loan/user_mandela.svg",
+      "/Images/snappy_loan/user_halima.png",
+      "/Images/snappy_loan/user_mandela.png",
     ],
   },
   {
