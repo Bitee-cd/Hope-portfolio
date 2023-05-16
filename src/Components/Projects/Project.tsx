@@ -42,7 +42,7 @@ const Project = (props: Props) => {
           // variants={container}
           // initial="hidden"
           // animate="show"
-          className="flex flex-col gap-10 md:gap-20 "
+          className="flex flex-col gap-10 md:gap-y-20 "
         >
           {projects.map((project, index) => (
             <motion.div

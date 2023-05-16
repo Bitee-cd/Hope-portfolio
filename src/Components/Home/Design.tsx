@@ -12,7 +12,7 @@ const Design = (props: Props) => {
     <section className="bg-sec_dark">
       <div className="screen-center py-10 lg:py-20 text-ter">
         <p className="h2 font-bold my-5">My Design Process</p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 gap-y-10 lg:gap-y-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-16">
           {processes.map((process, index) => (
             <div
               key={index}

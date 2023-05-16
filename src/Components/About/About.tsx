@@ -28,8 +28,8 @@ const AboutHope = (props: Props) => {
           <p className="my-2 text-opacity-50 text-black  lg:my-4  text-sm lg:text-2xl">
             Product designer
           </p>
-          <div className="flex flex-col gap-5">
-            <p className="leading-relaxed  p">
+          <div className="flex flex-col gap-5 text-sm lg:text-2xl">
+            <p className="">
               Hello! I am Jonah Hope Stanley. A passionate User-centered Product
               Designerrwith a strong background in Architecture. Creating
               user-friendly and immersive products has long been my goal. I
@@ -38,14 +38,14 @@ const AboutHope = (props: Props) => {
               find ways to communicate with users in a visually and cohesively
               inviting manner.
             </p>
-            <p className="text-base md:text-xl lg:text-xl 2xl:text-2xl">
+            <p className=" ">
               For the past three years, I&lsquo;ve worked with a handful of
               corporations such as ZuPago (Nigeria) and startups such as Texkoop
               (France), assisting them in delivering better experiences across
               the web, android, and iOS. Aside from apps, I&lsquo;ve also
               designed a variety of websites and landing pages.
             </p>
-            <p className="text-base md:text-xl lg:text-xl 2xl:text-2xl">
+            <p className="">
               Before now, I was an Architect with 2 years of experience. I
               transitioned into UI/UX design because of the passion I have for
               creating both aesthetically pleasing and usable products for
