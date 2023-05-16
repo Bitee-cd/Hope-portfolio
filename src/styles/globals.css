@@ -87,6 +87,13 @@ body {
   display: flex;
   width: calc(250px * 14);
 }
+@media only screen and (max-width: 600px) {
+  .slide-track {
+    animation: scroll 80s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+}
 
 .slide {
   height: 100px;
