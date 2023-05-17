@@ -4,6 +4,7 @@ import "swiper/css/effect-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
+import { Fade } from "react-awesome-reveal";
 interface Props {}
 const testimonialData = [
   {
@@ -52,9 +53,11 @@ const PeopleSay = (props: Props) => {
     <section className="overflow-x-hidden -z-100">
       <div className="screen-center  grid lg:grid-cols-2 gap-10 my-10 lg:my-20">
         <div className="flex items-center justify-center text-white">
-          <p className="h2 font-bold text-center lg:w-[80%]">
-            What people say about Me.
-          </p>
+          <Fade direction="up" duration={1500} delay={500} triggerOnce>
+            <p className="h2 font-bold text-center lg:w-[80%]">
+              What people say about Me.
+            </p>
+          </Fade>
         </div>
         <div className="flex flex-col  w-[80%] mx-auto gap-5 mb-10">
           <Swiper

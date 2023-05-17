@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 interface Props {}
 
 const Tools = (props: Props) => {
@@ -31,13 +32,16 @@ const Tools = (props: Props) => {
     <section className="pt-10">
       <div className="">
         <div className="screen-center text-ter my-10">
-          <p
-            className={`  ${
-              router.pathname === "/" ? "text-ter" : "text-black"
-            } h2 font-bold`}
-          >
-            My Tools
-          </p>
+          <Fade direction="up" duration={2000} triggerOnce>
+            {" "}
+            <p
+              className={`  ${
+                router.pathname === "/" ? "text-ter" : "text-black"
+              } h2 font-bold`}
+            >
+              My Tools
+            </p>
+          </Fade>
         </div>
         <div className="slider bg-sec_dark py-5 lg:py-10">
           <div className="slide-track gap-10">

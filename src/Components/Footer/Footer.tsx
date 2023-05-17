@@ -4,8 +4,10 @@ import Github from "@/Assets/Github";
 import Twitter from "@/Assets/Twitter";
 import Behance from "@/Assets/Behance";
 import LinkedIn from "@/Assets/LinkedIn";
-import Tools from "../Reusable/Tools";
+
 import { useRouter } from "next/router";
+import { email } from "@/utils/constants";
+import Tools from "../Reusable/Tools";
 
 interface Props {}
 
@@ -31,7 +33,9 @@ const Footer = (props: Props) => {
         <Tools />
         <div className="screen-center p-small flex justify-center items-center flex-col my-10 gap-5">
           <p>Clarifying difficult problems and ideas.</p>
-          <Button text="Let's Talk" />
+          <a href={`mailto: ${email}`}>
+            <Button text="Let's Talk" />
+          </a>
           <ul className="flex gap-5 items-center">
             {socialIcons.map((item, index) => (
               <li key={index}>

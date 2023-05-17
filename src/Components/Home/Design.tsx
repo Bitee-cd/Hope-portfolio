@@ -5,40 +5,56 @@ import Six from "@/Assets/Processes/Six";
 import Three from "@/Assets/Processes/Three";
 import Two from "@/Assets/Processes/Two";
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 interface Props {}
 
 const Design = (props: Props) => {
   return (
     <section className="bg-sec_dark">
       <div className="screen-center py-10 lg:py-20 text-ter">
-        <p className="h2 font-bold my-5">My Design Process</p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-16">
-          {processes.map((process, index) => (
-            <div
-              key={index}
-              className="text-ter rounded-[30px] border-[0.5px] border-sec_light bg-sec p-[10px]"
-            >
-              <div
-                className={`border-[0.5px] flex flex-col gap-3 rounded-[20px] h-full ${process.border_color} p-5`}
-              >
-                <div className="flex gap-2 items-center ">
+        <Fade cascade damping={1} triggerOnce>
+          <Fade direction="up" duration={1500} triggerOnce>
+            <p className="h2 font-bold my-5">My Design Process</p>
+          </Fade>
+          <Fade>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-16">
+              <Fade damping={1} cascade delay={1000} triggerOnce>
+                {processes.map((process, index) => (
                   <div
-                    className={`w-[40px] h-[40px] ${process.bg_color} rounded-full flex justify-center items-center`}
+                    key={index}
+                    className="text-ter rounded-[30px] border-[0.5px] border-sec_light bg-sec p-[10px]"
                   >
-                    {process.icon}
+                    <div
+                      className={`border-[0.5px] flex flex-col gap-3 rounded-[20px] h-full ${process.border_color} p-5`}
+                    >
+                      <div className="flex gap-2 items-center ">
+                        <Fade cascade delay={1000 * index} triggerOnce>
+                          <div
+                            className={`w-[40px] h-[40px] ${process.bg_color} rounded-full flex justify-center items-center`}
+                          >
+                            {process.icon}
+                          </div>
+                          <p className="text-base font-normal lg:text-lg">
+                            Step {process.step}
+                          </p>
+                        </Fade>
+                      </div>
+
+                      <div className="flex-1">
+                        <Fade cascade delay={1200 * index} triggerOnce>
+                          <p className="p font-semibold">{process.title}</p>
+                        </Fade>
+                      </div>
+                      <Fade cascade delay={1500 * index} triggerOnce>
+                        <p className="p-small font-normal">{process.body}</p>
+                      </Fade>
+                    </div>
                   </div>
-                  <p className="text-base font-normal lg:text-lg">
-                    Step {process.step}
-                  </p>
-                </div>
-                <div className="flex-1">
-                  <p className="p font-semibold">{process.title}</p>
-                </div>
-                <p className="p-small font-normal">{process.body}</p>
-              </div>
+                ))}
+              </Fade>
             </div>
-          ))}
-        </div>
+          </Fade>
+        </Fade>
       </div>
     </section>
   );

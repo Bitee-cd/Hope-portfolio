@@ -4,6 +4,7 @@ import Link from "next/link";
 import Button from "../Reusable/Button";
 import Image from "next/image";
 import ResponsiveImage from "../Reusable/Image";
+import { email } from "@/utils/constants";
 
 interface Props {
   handleNavHeight: (height: number) => void;
@@ -58,9 +59,9 @@ const Navbar = ({ handleNavHeight }: Props) => {
             <Link href="/">Resume</Link>
           </li>
           <li>
-            <Link href="/">
+            <a href={`mailto: ${email}`}>
               <Button text="Let's Talk" />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

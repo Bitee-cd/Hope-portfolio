@@ -3,6 +3,7 @@ import React from "react";
 import ResponsiveImage from "../Reusable/Image";
 import Pagination from "../Reusable/Pagination";
 import { pages } from "@/utils/constants";
+import { Fade } from "react-awesome-reveal";
 
 const UiDesignScreen = () => {
   return (
@@ -12,20 +13,22 @@ const UiDesignScreen = () => {
           <div className="flex flex-col gap-10 lg:gap-20">
             {ui_design.map((item, index) => (
               <div key={index} className="my-5 lg:my-10">
-                <p className="h5  font-extrabold">{item.title}</p>
-                <p className={`h2 font-extrabold ${item.color} lg:mb-10`}>
-                  {item.text}
-                </p>
-                <div className="w-full">
-                  {item.image?.map((image, index) => (
-                    <div className="my-5" key={index}>
-                      <ResponsiveImage
-                        src={image}
-                        alt={`Ideate ${item.title}`}
-                      />
-                    </div>
-                  ))}
-                </div>
+                <Fade damping={1} cascade triggerOnce direction="up">
+                  <p className="h5  font-extrabold">{item.title}</p>
+                  <p className={`h2 font-extrabold ${item.color} lg:mb-10`}>
+                    {item.text}
+                  </p>
+                  <div className="w-full">
+                    {item.image?.map((image, index) => (
+                      <div className="my-5" key={index}>
+                        <ResponsiveImage
+                          src={image}
+                          alt={`Ideate ${item.title}`}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </Fade>
               </div>
             ))}
           </div>
