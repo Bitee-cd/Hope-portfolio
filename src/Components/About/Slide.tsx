@@ -89,7 +89,7 @@ const Slide: React.FC<SlideProps> = ({
               <p className="text-ter text-opacity-50 h2 font-bold">
                 {content.id.toString().padStart(2, "0")}
               </p>
-              <p className="text-[#DADADA] p">{content.quote}</p>
+              <p className="text-[#DADADA] p flex-1">{content.quote}</p>
               <p className="text-white p font-semibold mt-5">
                 {content.author}
               </p>

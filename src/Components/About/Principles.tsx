@@ -1,7 +1,7 @@
 import { Qualities } from "@/Interfaces/Qualities";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
-import CustomSlider from "./CustomSlider";
+
 interface Props {}
 
 const different: Qualities[] = [

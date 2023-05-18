@@ -31,41 +31,41 @@ export let slidestestimonal = [
   {
     id: 1,
     quote:
-      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”",
-    author: "Victor Anto",
-    position: "Senior Frontend Engineer",
-    company: "(Ourpass, Nigeria)",
+      "“Hope has been an exceptional mentee to me. His willingness to learn and share his own experiences and wisdom while listening closely, makes him standout. His ability to complete task and work in a fast paced project is an incredible skill he has. I will recommend him to anyone who is looking forward to work with an excellent designer”",
+    author: "Ahmed Al-Kheerow",
+    position: "Product Designer",
+    company: "(Preflight, USA)",
   },
   {
     id: 2,
     quote:
-      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”",
-    author: "John Doe",
-    position: "Software Developer",
-    company: "(Acme Inc., USA)",
+      "“Having worked with Hope Jonah on various web design projects, I can attest to his unprecedented eye for detail in product design and has quickly become one of my favourite collaborators.”",
+    author: "Tersoo Adekpe",
+    position: "Product Manger",
+    company: "(Texkoop, France)",
   },
   {
     id: 3,
     quote:
-      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”",
-    author: "Jane Smith",
-    position: "UI Designer",
-    company: "(Design Co., Canada)",
+      "“Hope is one very determined and driven designer I’ve had pleasure of working with. His background in Architecture makes his design-thinking skills unique. He will be a great addition to any team ”",
+    author: "James Zizoh Anto",
+    position: "Mobile Developer",
+    company: "(Getir, Turrkey)",
   },
   {
     id: 4,
     quote:
-      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”",
-    author: "Mike Johnson",
-    position: "Product Manager",
-    company: "(Innovate Ltd., UK)",
+      "“Hope has been an exceptional mentee to me. His willingness to learn and share his own experiences and wisdom while listening closely, makes him standout. His ability to complete task and work in a fast paced project is an incredible skill he has. I will recommend him to anyone who is looking forward to work with an excellent designer”",
+    author: "Caleb Duniya",
+    position: "Senior Product Designer",
+    company: "(Preflight, USA)",
   },
   {
     id: 5,
     quote:
-      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ”",
-    author: "Lucy Williams",
-    position: "Marketing Manager",
-    company: "(Growth Inc., Australia)",
+      "“Hope is a genius architect turn product designer whose ambition keeps making him the best at everything he does. His professional attitude makes him one of the top product designers I have ever worked with”",
+    author: "Victor Anto",
+    position: "Frontend Developer",
+    company: "(Ourpass, Nigeria)",
   },
 ];
