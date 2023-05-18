@@ -9,6 +9,7 @@ import Clock from "../svg/Overview/2b";
 import Spanner from "../svg/Overview/2c";
 import List from "./List";
 import Title from "./Title";
+import { Fade } from "react-awesome-reveal";
 interface Props {
   data: OverViewData[];
   style: OverViewStyle;
@@ -31,64 +32,66 @@ const ProjectOverview = ({ style, data }: Props) => {
                 index === 5 && "lg:order-6"
               } ${index === 2 && "lg:order-5"} ${index === 1 && "lg:order-3"} `}
             >
-              <div className="">
-                <div className="flex gap-1 lg:gap-2 items-center  ">
-                  <div className={`icon_circle  ${icon_className}`}>
-                    {
-                      [
-                        <Lens key="lens" color={color} />,
-                        <Book key="book" color={color} />,
-                        <Bulb key="bulb" color={color} />,
-                        <CheckBook key="checkbook" color={color} />,
-                        <Clock key="clock" color={color} />,
-                        <Spanner key="spanner" color={color} />,
-                      ][index]
-                    }
+              <Fade delay={index * 2000} direction="up" triggerOnce>
+                <div className="">
+                  <div className="flex gap-1 lg:gap-2 items-center  ">
+                    <div className={`icon_circle  ${icon_className}`}>
+                      {
+                        [
+                          <Lens key="lens" color={color} />,
+                          <Book key="book" color={color} />,
+                          <Bulb key="bulb" color={color} />,
+                          <CheckBook key="checkbook" color={color} />,
+                          <Clock key="clock" color={color} />,
+                          <Spanner key="spanner" color={color} />,
+                        ][index]
+                      }
+                    </div>
+                    <p className="h4 font-extrabold">{item.title}</p>
                   </div>
-                  <p className="h4 font-extrabold">{item.title}</p>
-                </div>
 
-                <div className="mt-2 lg:mt-5 flex gap-1 lg:gap-2">
-                  <div className="w-[20px] lg:w-[40px]"></div>
-                  <div>
-                    <p className="p font-normal">{item.text && item.text}</p>
-                    {item.list && (
-                      <ul className={`mt-4 unordered ${bullet_className}`}>
-                        {item.list.map((list, index) => (
-                          <li
-                            key={index}
-                            className={`list p font-normal mb-2 leading-relaxed `}
-                          >
-                            {list}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                    {item.icons && (
-                      <ul className="flex gap-3 items-center">
-                        {item.icons.map((item, index) => (
-                          <li key={index} className="w-[25px] lg:w-[50px] ">
-                            <Image
-                              alt="social icons"
-                              src={item.link}
-                              placeholder="blur"
-                              blurDataURL="/Images/profile__.png"
-                              width={700}
-                              height={475}
-                              priority
-                              sizes="100vw"
-                              style={{
-                                width: "100%",
-                              }}
-                              className="object-contain h-[25px] lg:h-[50px]"
-                            />
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                  <div className="mt-2 lg:mt-5 flex gap-1 lg:gap-2">
+                    <div className="w-[20px] lg:w-[40px]"></div>
+                    <div>
+                      <p className="p font-normal">{item.text && item.text}</p>
+                      {item.list && (
+                        <ul className={`mt-4 unordered ${bullet_className}`}>
+                          {item.list.map((list, index) => (
+                            <li
+                              key={index}
+                              className={`list p font-normal mb-2 leading-relaxed `}
+                            >
+                              {list}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                      {item.icons && (
+                        <ul className="flex gap-3 items-center">
+                          {item.icons.map((item, index) => (
+                            <li key={index} className="w-[25px] lg:w-[50px] ">
+                              <Image
+                                alt="social icons"
+                                src={item.link}
+                                placeholder="blur"
+                                blurDataURL="/Images/profile__.png"
+                                width={700}
+                                height={475}
+                                priority
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                }}
+                                className="object-contain h-[25px] lg:h-[50px]"
+                              />
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Fade>
             </div>
           ))}
         </div>

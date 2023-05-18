@@ -23,6 +23,7 @@ const ClassicParkScreen = () => {
       <Define define={define} color={`text-[${COLORS.classic_blue}]`} />
       <Ideate />
       <ClassicDesign />
+      
       <VisualDesign />
       <Conclusion />
       <Pagination

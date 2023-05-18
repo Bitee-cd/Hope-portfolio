@@ -7,7 +7,7 @@ const Introduction = (props: Props) => {
   return (
     <section className="relative my-10 lg:my-20 min-h-[50vh]">
       {/* <div className="w-1/2 right-0 top-0 background absolute h-full"></div> */}
-      <div className="screen-center  items-center grid lg:grid-cols-2 text-ter ">
+      <div className="screen-center  items-center grid gap-y-10 lg:grid-cols-2 text-ter ">
         <Zoom duration={3000} delay={1500} triggerOnce>
           <div className="mx-auto lg:col-start-2 lg:row-start-1 w-full">
             <Image
