@@ -12,8 +12,15 @@ const UiDesignScreen = () => {
         <div className="screen-center">
           <div className="flex flex-col gap-10 lg:gap-20">
             {ui_design.map((item, index) => (
-              <div key={index} className="my-5 lg:my-10">
-                <Fade damping={1} cascade triggerOnce direction="up">
+              <Fade
+                damping={1}
+                key={index}
+                triggerOnce
+                direction="up"
+                duration={2000}
+                delay={500}
+              >
+                <div className="my-5 lg:my-10">
                   <p className="h5  font-extrabold">{item.title}</p>
                   <p className={`h2 font-extrabold ${item.color} lg:mb-10`}>
                     {item.text}
@@ -28,8 +35,8 @@ const UiDesignScreen = () => {
                       </div>
                     ))}
                   </div>
-                </Fade>
-              </div>
+                </div>
+              </Fade>
             ))}
           </div>
         </div>

@@ -8,7 +8,7 @@ const Define = () => {
   return (
     <section className="my-10 xl:my-20">
       <div className="screen-center">
-        <Title text="Define" color={COLORS.flet_purple} />
+        <Title text="Define" color={`text-${COLORS.flet_purple}`} />
         {define.map((item, index) => (
           <div className="my-10 flex flex-col gap-10" key={index}>
             <div className="">

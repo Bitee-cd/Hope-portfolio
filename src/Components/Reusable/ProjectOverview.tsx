@@ -32,7 +32,7 @@ const ProjectOverview = ({ style, data }: Props) => {
                 index === 5 && "lg:order-6"
               } ${index === 2 && "lg:order-5"} ${index === 1 && "lg:order-3"} `}
             >
-              <Fade delay={index * 2000} direction="up" triggerOnce>
+              <Fade direction="up" triggerOnce>
                 <div className="">
                   <div className="flex gap-1 lg:gap-2 items-center  ">
                     <div className={`icon_circle  ${icon_className}`}>

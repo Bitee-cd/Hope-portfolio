@@ -20,7 +20,6 @@ const FletRideScreen = () => {
       <FletProjectOverview />
       <Design />
       <Understand />
-      <Conclusion />
       <Define />
       <Ideate />
       <StyleDesign />

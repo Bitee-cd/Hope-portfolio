@@ -8,14 +8,17 @@ interface Props {
 const Title = ({ color, text }: Props) => {
   return (
     <div className="">
-      <Fade cascade damping={1} direction="up" triggerOnce>
-        <Fade direction="up">
-          <p className={`${color} font-black p`}>{text}</p>
-        </Fade>
-        <Slide direction="left">
-          <div className="w-full border-t border-black"></div>
-        </Slide>
+      <Fade direction="up">
+        <p className={`${color} font-black p`}>{text}</p>
       </Fade>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        exit={{ width: 0 }}
+        transition={{ duration: 3 }}
+        style={{ originX: "center" }}
+        className="w-full border-t bg-black h-[1px]"
+      ></motion.div>
     </div>
   );
 };

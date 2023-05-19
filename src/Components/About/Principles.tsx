@@ -21,10 +21,10 @@ const Principles = (props: Props) => {
     <section className="my-10 lg:my-20">
       <div className="screen-center  rounded-[10px] lg:rounded-[60px] border border-sec py-10">
         <div className="w-[90%] mx-auto flex flex-col md:flex-row justify-between ">
-          <Fade cascade delay={1000} damping={1} triggerOnce>
+          <Fade cascade damping={1} triggerOnce>
             <Fade triggerOnce>
               <div className="">
-                <Fade cascade damping={1} triggerOnce>
+                <Fade cascade damping={1} direction="up" triggerOnce>
                   <p className="h4 text-black font-semibold">
                     Why I am Different
                   </p>
@@ -35,7 +35,7 @@ const Principles = (props: Props) => {
                           <p className="my-2 text-opacity-50 text-black  lg:my-4  text-sm lg:text-2xl">
                             <span className="font-bold mr-2">
                               {item.number}
-                            </span>{" "}
+                            </span>
                             {item.text}
                           </p>
                         </Fade>
@@ -48,7 +48,7 @@ const Principles = (props: Props) => {
 
             <Fade triggerOnce>
               <div className="">
-                <Fade cascade damping={1} triggerOnce delay={4000}>
+                <Fade cascade damping={1} triggerOnce direction="up">
                   <p className="h4 text-black font-semibold">My principles</p>
                   <ul>
                     {principles.map((item) => (
