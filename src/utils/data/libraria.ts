@@ -17,7 +17,7 @@ export const libraria_data: OverViewData[] = [
   },
   {
     title: "Solution",
-    text: "E-commerce or a digital solution that can increase presence, Customers may order their favourite online and have them delivered to their homes or offices.",
+    text: "E-commerce or a digital solution that can increase presence, Customers may order their favourite books and have them delivered to their homes or offices.",
   },
   { title: "My Role", text: "Solo UI/UX Designer" },
   { title: "Duration", text: "May 2022 - Aug 2023" },
@@ -176,7 +176,6 @@ export const final_design: TitleTextImage[] = [
   {
     image: ["/libraria/mobile_c.png"],
   },
- 
 ];
 const impact: TitleTextImage[] = [
   {

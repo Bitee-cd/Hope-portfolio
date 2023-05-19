@@ -19,15 +19,10 @@ const Understand = ({}: Props) => {
         </div>
 
         <div className="my-5 lg:my-10">
-          <p className="my-5 lg:my-10 h4 font-extrabold">Design Strategy</p>
-          <p className="p">
-            In order to better understand where they were having trouble with
-            the several loan apps that were already available, I conducted
-            interviews with consumers ranging in age from 18 to 45.
-          </p>
+          <p className="my-2 lg:my-5 h4 font-extrabold">Design Strategy</p>
 
-          <div className="my-5">
-            <div className="my-10 lg:my-20 flex flex-col gap-10 lg:gap-20 ">
+          <div className="">
+            <div className="my-5 lg:my-10 flex flex-col gap-5 lg:gap-10 ">
               {design_strategy.map((item, index) => (
                 <HeaderTextImageGroup
                   item={item}
@@ -40,7 +35,7 @@ const Understand = ({}: Props) => {
         </div>
 
         <div className="my-5 lg:my-10">
-          <div className="my-5 lg:my-10">
+          <div className="">
             <p className="my-5 lg:my-10 h4 font-extrabold">
               Competitive Analysis
             </p>
