@@ -8,7 +8,7 @@ const StyleDesign = () => {
   return (
     <section className="my-10 xl:my-20">
       <div className="screen-center">
-        <Title text="Design" color={COLORS.flet_purple} />
+        <Title text="Design" color={`text-[${COLORS.flet_purple}]`} />
       </div>
       {design.map((item, index) => (
         <div className="my-10 flex flex-col gap-10" key={index}>

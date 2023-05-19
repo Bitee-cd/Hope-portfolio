@@ -7,7 +7,7 @@ const Ideate = () => {
   return (
     <section className="my-10 xl:my-20">
       <div className="screen-center">
-        <Title text="Ideate" color={COLORS.flet_purple} />
+        <Title text="Ideate" color={`text-[${COLORS.flet_purple}]`} />
 
         <div className="my-10 flex flex-col gap-10">
           <div className="">

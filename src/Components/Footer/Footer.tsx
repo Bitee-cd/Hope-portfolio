@@ -43,7 +43,9 @@ const Footer = (props: Props) => {
               </li>
             ))}
           </ul>
-          <p>{date.getFullYear()}, hopejonah.co.uk</p>
+          <p className="flex items-center">
+            {date.getFullYear()} &copy; hopejonah.co.uk
+          </p>
         </div>
       </section>
     </>

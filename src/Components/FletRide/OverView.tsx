@@ -23,7 +23,7 @@ const FletProjectOverview = (props: Props) => {
       <div className="screen-center my-10">
         <Title color="text-[#2A00AC]" text="Project Overview" />
         {/* box  */}
-        <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between my-10 lg:my-20 gap-y-10">
+        <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between my-5 lg:my-10 gap-y-10">
           {/* first */}
           <div className={` lg:w-[65%] gap-1 lg:gap-2 `}>
             <div className="">

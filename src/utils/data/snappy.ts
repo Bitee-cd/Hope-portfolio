@@ -187,7 +187,7 @@ const lesson = [
   {
     title: "Lesson Learned",
     texts: [
-      "UReceiving comments from prospective users and making all the necessary adjustments was a satisfying experience.",
+      "Receiving comments from prospective users and making all the necessary adjustments was a satisfying experience.",
       "The process of developing a product from its first design concept to its finished, functional state is lengthy and exciting.",
       "I gained the capacity to distinguish between my own presumptions and the results of the usability testing and user interviews.",
     ],

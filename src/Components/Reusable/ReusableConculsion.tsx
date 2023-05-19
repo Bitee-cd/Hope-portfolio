@@ -8,7 +8,7 @@ const ReusableConclusion = ({ conclusion }: Props) => {
   return (
     <section>
       <div className="screen-center ">
-        <div className="my-10 lg:my-20">
+        <div className="my-5 lg:my-10 ">
           {conclusion.data &&
             conclusion.data.map((item, index) => (
               <HeaderTextImageGroup item={item} key={index} />

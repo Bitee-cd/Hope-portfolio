@@ -49,12 +49,12 @@ const Introduction = (props: Props) => {
             </Fade>
             <Fade direction="up" duration={2000} delay={1500} triggerOnce>
               <p className="text-base md:text-xl lg:text-xl 2xl:text-2xl">
-                I am a Product Designer with 3 years experience. I work at the
-                intersection of inquisitive, reasoning, and imagination to
-                uncover perception, analyze problems, and create meaningful,
-                future-oriented solutions. I have worked for B2B and B2C
-                experiences on iOS, Android, and the web. I am a great advocate
-                of user centered design. I am currently learning Mobile
+                I am a self thought Product Designer with 3 years experience. I
+                work at the intersection of inquisitive, reasoning, and
+                imagination to uncover perception, analyze problems, and create
+                meaningful, future-oriented solutions. I have worked for B2B and
+                B2C experiences on iOS, Android, and the web. I am a great
+                advocate of user centered design. I am currently learning Mobile
                 Development.
               </p>
             </Fade>

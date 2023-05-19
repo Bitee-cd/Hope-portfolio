@@ -22,7 +22,7 @@ const ProjectOverview = ({ style, data }: Props) => {
       <div className="screen-center my-10">
         <Title color={text_color} text="Project Overview" />
         {/* box  */}
-        <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between my-10 lg:my-20 gap-y-10">
+        <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between my-5 lg:my-10 gap-y-10">
           {data.map((item, index) => (
             <div
               key={index}

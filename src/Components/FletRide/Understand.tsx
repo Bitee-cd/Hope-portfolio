@@ -14,9 +14,7 @@ const Understand = () => {
           </div>
 
           <div className="my-5 lg:my-10">
-            <p className="my-5 lg:my-10 h4 font-extrabold">
-              Qualitative Analysis
-            </p>
+            <p className="my-2 h4 font-extrabold">Qualitative Analysis</p>
             <p className="p">
               To comprehend the demands of the users I am developing for, I
               conducted interviews. Young and old persons who were having

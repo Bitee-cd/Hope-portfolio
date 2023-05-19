@@ -14,7 +14,7 @@ const Pagination = ({ prev, next }: Props) => {
         <Slide direction="left" triggerOnce>
           <Link href={prev}>
             <div className="inline-flex items-center gap-2 lg:gap-5">
-              <div className="rotate-180 w-[20px] lg:w-[50px]">
+              <div className="rotate-180 w-[20px] lg:w-[35px]">
                 <ResponsiveImage src="/svg/next.svg" alt="previous" />
               </div>
               <p className="p-small">Previous Project</p>
@@ -27,7 +27,7 @@ const Pagination = ({ prev, next }: Props) => {
           <Link href={next}>
             <div className="inline-flex items-center gap-2 lg:gap-5">
               <p className="p-small">Next Project</p>
-              <div className="w-[20px] lg:w-[50px]">
+              <div className="w-[20px] lg:w-[35px]">
                 <ResponsiveImage src="/svg/next.svg" alt="previous" />
               </div>
             </div>
