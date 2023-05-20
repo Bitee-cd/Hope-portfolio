@@ -14,7 +14,9 @@ const UiDesign = () => {
         />
         <meta
           property="og:description"
-          content="Convenient last-mile delivery for all"
+          content="A passionate User-centered
+                  Product Designer with a strong background in Architecture.
+                  Creating user-friendly and immersive products."
         />
         <meta
           property="og:image"
