@@ -4,12 +4,12 @@ import { prioritization } from "@/utils/data/snappy";
 
 const Proritization = () => {
   return (
-    <section className="my-10 xl:my-20">
+    <section className="my-5 xl:my-10">
       <div className="screen-center">
         <div className="my-10">
           <p className="h4 font-extrabold mb-5">Prioritization</p>
           <div className="my-5 custom_border">
-            <div className="w-[90%] mx-auto justify-between px-2 flex flex-col lg:flex-row lg:flex-wrap gap-5 lg:gap-10  my-10 xl:my-20">
+            <div className="w-[90%] mx-auto justify-between px-2 flex flex-col lg:flex-row lg:flex-wrap gap-5 lg:gap-10  my-5 xl:my-10">
               {prioritization.map((item, index) => (
                 <div
                   className={`lg:w-[45%] ${index === 1 && " lg:order-2"} ${

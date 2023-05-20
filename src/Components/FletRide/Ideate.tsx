@@ -5,7 +5,7 @@ import ResponsiveImage from "../Reusable/Image";
 
 const Ideate = () => {
   return (
-    <section className="my-10 xl:my-20">
+    <section className="my-5 lg:my-10">
       <div className="screen-center">
         <Title text="Ideate" color={`text-[${COLORS.flet_purple}]`} />
 

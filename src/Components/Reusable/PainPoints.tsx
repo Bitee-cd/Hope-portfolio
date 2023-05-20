@@ -10,11 +10,11 @@ const PainPoints = ({ pain_points }: Props) => {
   return (
     <section>
       <div className="screen-center">
-        <div className="my-10 ">
+        <div className="my-5 lg:my-10 ">
           <p className="h4 font-extrabold mb-5">Pain Points</p>
           {pain_points.title && <p className="p">{pain_points.title}</p>}
           <div className="custom_border my-10">
-            <div className="w-[90%] mx-auto flex flex-col lg:flex-row lg:flex-wrap gap-10 justify-between xl:gap-x-20 my-10 xl:my-20">
+            <div className="w-[90%] mx-auto flex flex-col lg:flex-row lg:flex-wrap gap-10 justify-between xl:gap-x-20 my-5 lg:my-10">
               {pain_points.list.map((item, index) => (
                 <div
                   className={`lg:w-[45%] ${index === 1 && "lg:order-2"} ${

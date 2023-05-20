@@ -8,7 +8,7 @@ interface Props {
 }
 const Pagination = ({ prev, next }: Props) => {
   return (
-    <section className="my-10 overflow-hidden">
+    <section className="my-5 lg:my-10 overflow-hidden">
       <div className="screen-center flex justify-between items-center">
         {/* previous button  */}
         <Slide direction="left" triggerOnce>

@@ -20,7 +20,7 @@ const FletProjectOverview = (props: Props) => {
   const color = "#2A00AC";
   return (
     <section>
-      <div className="screen-center my-10">
+      <div className="screen-center my-5 lg:my-10">
         <Title color="text-[#2A00AC]" text="Project Overview" />
         {/* box  */}
         <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between my-5 lg:my-10 gap-y-10">

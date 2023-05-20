@@ -6,12 +6,12 @@ import ResponsiveImage from "../Reusable/Image";
 
 const StyleDesign = () => {
   return (
-    <section className="my-10 xl:my-20">
+    <section className="my-5 xl:my-10">
       <div className="screen-center">
         <Title text="Design" color={`text-[${COLORS.flet_purple}]`} />
       </div>
       {design.map((item, index) => (
-        <div className="my-10 flex flex-col gap-10" key={index}>
+        <div className="my-5 lg:my-10 flex flex-col gap-10" key={index}>
           <div className="screen-center">
             <p className="h4 font-extrabold mb-5">{item.title}</p>
           </div>

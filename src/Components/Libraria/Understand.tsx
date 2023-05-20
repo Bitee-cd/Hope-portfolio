@@ -13,10 +13,8 @@ interface Props {}
 const Understand = ({}: Props) => {
   return (
     <section>
-      <div className="screen-center my-10 xl:my-20">
-        <div>
-          <Title text="Understand" color={`text-[${COLORS.libraria_green}]`} />
-        </div>
+      <div className="screen-center my-5 xl:my-10">
+        <Title text="Understand" color={`text-[${COLORS.libraria_green}]`} />
 
         <div className="my-5 lg:my-10">
           <p className="my-2 lg:my-5 h4 font-extrabold">Design Strategy</p>

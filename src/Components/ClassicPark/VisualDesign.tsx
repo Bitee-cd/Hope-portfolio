@@ -4,7 +4,7 @@ import ResponsiveImage from "../Reusable/Image";
 
 const VisualDesign = () => {
   return (
-    <section className="my-10 lg:my-20">
+    <section className="my-5 lg:my-10">
       <div className="screen-center">
         {/* visual design  */}
         <div className="my-10">

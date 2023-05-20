@@ -12,46 +12,39 @@ const Design = (props: Props) => {
   return (
     <section className="bg-sec_dark">
       <div className="screen-center py-10 lg:py-20 text-ter">
-        <Fade cascade damping={1} triggerOnce>
-          <Fade direction="up" triggerOnce>
-            <p className="h2 font-bold my-5">My Design Process</p>
-          </Fade>
-          <Fade>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-16">
-              <Fade damping={1} cascade triggerOnce>
-                {processes.map((process, index) => (
-                  <div
-                    key={index}
-                    className="text-ter h-full rounded-[30px] border-[0.5px] border-sec_light bg-sec p-[10px]"
-                  >
-                    <div
-                      className={`border-[0.5px] flex flex-col gap-3 rounded-[20px] h-full ${process.border_color} p-5`}
-                    >
-                      <Fade cascade damping={1} delay={500} triggerOnce>
-                        <div className="flex gap-2 items-center ">
-                          <div
-                            className={`w-[40px] h-[40px] ${process.bg_color} rounded-full flex justify-center items-center`}
-                          >
-                            {process.icon}
-                          </div>
-                          <p className="text-base font-normal lg:text-lg">
-                            Step {process.step}
-                          </p>
-                        </div>
-
-                        <p className="p font-semibold flex-1">
-                          {process.title}
-                        </p>
-
-                        <p className="p-small font-normal">{process.body}</p>
-                      </Fade>
-                    </div>
-                  </div>
-                ))}
-              </Fade>
-            </div>
-          </Fade>
+        <Fade direction="up" triggerOnce>
+          <p className="h2 font-bold my-5">My Design Process</p>
         </Fade>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-y-16">
+          <Fade damping={0.5} direction="up" cascade triggerOnce>
+            {processes.map((process, index) => (
+              <div
+                key={index}
+                className="text-ter h-full rounded-[30px] border-[0.5px] border-sec_light bg-sec p-[10px]"
+              >
+                <div
+                  className={`border-[0.5px] flex flex-col gap-3 rounded-[20px] h-full ${process.border_color} p-5`}
+                >
+                  <div className="flex gap-2 items-center ">
+                    <div
+                      className={`w-[40px] h-[40px] ${process.bg_color} rounded-full flex justify-center items-center`}
+                    >
+                      {process.icon}
+                    </div>
+                    <p className="text-base font-normal lg:text-lg">
+                      Step {process.step}
+                    </p>
+                  </div>
+
+                  <p className="p font-semibold flex-1">{process.title}</p>
+
+                  <p className="p-small font-normal">{process.body}</p>
+                </div>
+              </div>
+            ))}
+          </Fade>
+        </div>
       </div>
     </section>
   );

@@ -74,16 +74,16 @@ const VerticalCarousel: React.FC<VerticalCarouselProps> = () => {
   let navigationButtons = null;
   if (showNavigation) {
     navigationButtons = (
-      <div className="flex flex-row md:flex-col gap-5 justify-center">
+      <div className="flex flex-row  md:flex-col gap-10 justify-center mt-32 md:mt-0">
         <button
           onClick={() => moveSlide(1)}
-          className="bg-sec_dark -rotate-90 md:rotate-0 rounded-full flex items-center justify-center w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] xl:w-[80px] xl:h-[80px]"
+          className="bg-sec_dark  rounded-full flex items-center justify-center w-[60px] h-[60px] xl:w-[80px] xl:h-[80px]"
         >
           <Image src={ArrowUp} alt="arrow up" />
         </button>
         <button
           onClick={() => moveSlide(-1)}
-          className="bg-sec_dark rotate-90 md:rotate-180 rounded-full flex items-center justify-center  w-[40px] h-[40px] lg:w-[60px] lg:h-[60px] xl:w-[80px] xl:h-[80px]"
+          className="bg-sec_dark rotate-180 rounded-full flex items-center justify-center  w-[60px] h-[60px] xl:w-[80px] xl:h-[80px]"
         >
           <Image src={ArrowUp} alt="arrow up" />
         </button>

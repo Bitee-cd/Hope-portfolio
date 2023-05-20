@@ -19,7 +19,7 @@ const ProjectOverview = ({ style, data }: Props) => {
   const { color, icon_className, bullet_className, text_color } = style;
   return (
     <section>
-      <div className="screen-center my-10">
+      <div className="screen-center my-5 lg:my-10">
         <Title color={text_color} text="Project Overview" />
         {/* box  */}
         <div className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-between my-5 lg:my-10 gap-y-10">

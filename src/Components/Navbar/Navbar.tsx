@@ -56,7 +56,9 @@ const Navbar = ({ handleNavHeight }: Props) => {
             <Link href="/about">About me</Link>
           </li>
           <li>
-            <Link href="/">Resume</Link>
+            <a href="https://drive.google.com/file/d/1_lSQMXhFfgXoepoYNa312lLEC0uULHe9/view?usp=share_link">
+              Resume
+            </a>
           </li>
           <li>
             <a href={`mailto: ${email}`}>

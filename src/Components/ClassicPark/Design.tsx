@@ -7,7 +7,7 @@ import HeaderTextImageGroup from "../Reusable/HeaderTextImageGroup";
 
 const ClassicDesign = () => {
   return (
-    <section className="my-10 lg:my-20">
+    <section className="my-5 lg:my-10">
       <div className="screen-center my-5 lg:my-10">
         <Title text="Design" color={`text-[${COLORS.classic_blue}]`} />
         <div className="my-5 lg:my-10 flex flex-col gap-10">

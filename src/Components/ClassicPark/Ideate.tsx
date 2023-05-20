@@ -7,7 +7,7 @@ import { ideate } from "@/utils/data/classic_park";
 interface Props {}
 const Ideate = ({}: Props) => {
   return (
-    <section className="my-10 lg:my-20">
+    <section className="my-5 lg:my-10">
       <div className="screen-center">
         <Title text="Ideate" color={`text-[${COLORS.classic_blue}]`} />
         {/* brainstorming  */}

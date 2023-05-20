@@ -4,7 +4,7 @@ import { mockups } from "@/utils/data/flet_ride";
 
 const Mockups = () => {
   return (
-    <section className="my-10 xl:my-20">
+    <section className="my-5 lg:my-10">
       <div className="screen-center">
         <div>
           <p className="h4 font-extrabold mb-5">High Fidelity Mockups</p>

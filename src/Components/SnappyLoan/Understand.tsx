@@ -7,7 +7,7 @@ interface Props {}
 const Understand = (props: Props) => {
   return (
     <section>
-      <div className="screen-center my-10 xl:my-20">
+      <div className="screen-center my-5 lg:my-10">
         <div>
           <Title text="Understand" color={`text-[${COLORS.green_dark}]`} />
           <p className="my-2 p">
@@ -15,8 +15,8 @@ const Understand = (props: Props) => {
             through so i conducted qualitative analysis
           </p>
         </div>
-        <div className="my-10">
-          <p className="my-10 h4 font-extrabold">Qualitative Research</p>
+        <div className="my-5 lg:my-10">
+          <p className="h4 font-extrabold">Qualitative Research</p>
           <p className="p">
             In order to better understand where they were having trouble with
             the several loan apps that were already available, I conducted

@@ -55,10 +55,10 @@ export let slidestestimonal = [
   {
     id: 4,
     quote:
-      "“Hope has been an exceptional mentee to me. His willingness to learn and share his own experiences and wisdom while listening closely, makes him standout. His ability to complete task and work in a fast paced project is an incredible skill he has. I will recommend him to anyone who is looking forward to work with an excellent designer”",
+      "“ Hope's unwavering drive and determination to deliver outstanding results are truly inspiring. Working with Hope was an absolute pleasure, as his unwavering dedication and passion for his craft were evident in every step of the project. ”",
     author: "Caleb Duniya",
-    position: "Senior Product Designer",
-    company: "(Preflight, USA)",
+    position: "Software Engineer",
+    company: "(AIQ, Nigeria)",
   },
   {
     id: 5,

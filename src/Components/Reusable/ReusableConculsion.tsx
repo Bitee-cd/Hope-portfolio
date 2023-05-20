@@ -16,8 +16,8 @@ const ReusableConclusion = ({ conclusion }: Props) => {
         </div>
         <div className="my-5 lg:my-10">
           <p className="h4 font-extrabold ">Impact</p>
-          <div className=" custom_border my-10">
-            <div className="w-[90%] mx-auto flex flex-col lg:flex-row lg:flex-wrap gap-5 lg:gap-10 justify-between xl:gap-x-20 my-10 xl:my-20">
+          <div className=" custom_border my-5 lg:my-10">
+            <div className="w-[90%] mx-auto flex flex-col lg:flex-row lg:flex-wrap gap-5 lg:gap-10 justify-between xl:gap-x-20 my-5 xl:my-10">
               {conclusion?.impact.map((item, index) => (
                 <div
                   className={`lg:w-[45%] ${index === 1 && " lg:order-2"} ${

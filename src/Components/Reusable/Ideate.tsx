@@ -9,7 +9,7 @@ interface Props {
 }
 const Ideate = ({ ideate, title_color }: Props) => {
   return (
-    <section className="my-10 lg:my-20">
+    <section className="my-5 lg:my-10">
       <div className="screen-center">
         <Title text="Ideate" color={title_color} />
 

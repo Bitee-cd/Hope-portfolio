@@ -8,7 +8,7 @@ const Understand = () => {
   return (
     <>
       <section>
-        <div className="screen-center my-10 xl:my-20">
+        <div className="screen-center my-5 xl:my-10">
           <div>
             <Title text="Understand" color={`text-[${COLORS.flet_purple}]`} />
           </div>

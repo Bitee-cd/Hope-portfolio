@@ -5,7 +5,7 @@ import ResponsiveImage from "../Reusable/Image";
 interface Props {}
 const SnappyDesign = (props: Props) => {
   return (
-    <section className="my-10 lg:my-20">
+    <section className="my-5 lg:my-10">
       <div className="screen-center my-5 lg:my-10">
         <Title text="Design" color={`text-[${COLORS.green_dark}]`} />
         <p className="h4 my-5 lg:mb-10 font-extrabold">Wireframe</p>

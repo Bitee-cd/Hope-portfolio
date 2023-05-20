@@ -10,10 +10,12 @@ interface Props {}
 const Research = (props: Props) => {
   return (
     <section>
-      <div className="screen-center my-10 xl:my-20">
+      <div className="screen-center my-5 lg:my-10">
         {/* quantitative research  */}
-        <div className="my-10">
-          <p className="my-10 h4 font-extrabold">Qualitative Research</p>
+        <div className="my-5 lg:my-10">
+          <p className="my-5 lg:my-10 h4 font-extrabold">
+            Qualitative Research
+          </p>
           <p className="p">
             I spoke with students, close associates who love to read books and
             passive readers in order to better understand where they were

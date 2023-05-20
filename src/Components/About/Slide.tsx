@@ -15,7 +15,7 @@ interface SlideProps {
 
 const SlideContainer = styled(animated.div)`
   position: absolute;
-  height: 70%;
+  height: 50%;
   top: 50%;
   display: flex;
   align-items: center;
