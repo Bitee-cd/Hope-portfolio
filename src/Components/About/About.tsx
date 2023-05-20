@@ -47,11 +47,10 @@ const AboutHope = (props: Props) => {
 
                 <p className=" ">
                   For the past three years, I&lsquo;ve worked with a handful of
-                  corporations such as ZuPago (Nigeria) and startups such as
-                  Texkoop (France), assisting them in delivering better
-                  experiences across the web, android, and iOS. Aside from apps,
-                  I&lsquo;ve also designed a variety of websites and landing
-                  pages.
+                  corporations such as ZuPago (UK) and startups such as Texkoop
+                  (France), assisting them in delivering better experiences
+                  across the web, android, and iOS. Aside from apps, I&lsquo;ve
+                  also designed a variety of websites and landing pages.
                 </p>
 
                 <p className="">
