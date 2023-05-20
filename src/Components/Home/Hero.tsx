@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
                 <span className="text-pri text-[45px] md:text-[90px] lg:text-[120px] font-extrabold">
                   Sophistication
                 </span>
-                <p className="text-end w-full text-[12px] text-base  font-[300]">
+                <p className="text-end w-full text-[10px] text-base  font-[300]">
                   Leonardo da Vinci
                 </p>
               </Fade>
