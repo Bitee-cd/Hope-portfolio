@@ -8,7 +8,7 @@ interface Props {}
 const LibrariaDesign = (props: Props) => {
   return (
     <>
-      <section className="my-10 lg:my-20">
+      <section className="my-5 lg:my-10">
         <div className="screen-center my-5 lg:my-10">
           <Title text="Design" color={`text-[${COLORS.libraria_green}]`} />
           <p className="h4 my-5 lg:mb-10 font-extrabold">Wireframe</p>
@@ -23,7 +23,7 @@ const LibrariaDesign = (props: Props) => {
           alt="LIbraria  Wireframe"
         />
       </section>
-      <section className="screen-center my-10 lg:my-20">
+      <section className="screen-center my-5 lg:my-10">
         <p className="h4 my-5 lg:mb-10 font-extrabold">Design System</p>
         {design.map((item, index) => (
           <HeaderTextImageGroup item={item} key={index} />

@@ -29,7 +29,7 @@ const Navbar = ({ handleNavHeight }: Props) => {
         <div className="flex justify-between items-center">
           <div className="w-[40px] md:w-[50px] lg:w-[70px] ">
             <Link href="/">
-              <ResponsiveImage src="/Images/logo.png" alt="logo" />
+              <ResponsiveImage src="/logo.png" alt="logo" />
             </Link>
           </div>
           <div

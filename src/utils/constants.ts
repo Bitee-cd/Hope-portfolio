@@ -13,4 +13,4 @@ export const pages = {
   flet_ride: "/flet-ride",
   ui_design: "/ui-designs",
 };
-export const email = "Calebduniya45@gmail.com";
+export const email = "Uxdesign.hope@gmail.com";
