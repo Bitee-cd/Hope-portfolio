@@ -23,9 +23,24 @@ const ClassicParkScreen = () => {
       <Define define={define} color={`text-[${COLORS.classic_blue}]`} />
       <Ideate />
       <ClassicDesign />
-      
+
       <VisualDesign />
       <Conclusion />
+      <div className="screen-center">
+        <p className="h4 font-extrabold my-5">Prototype</p>
+        <div className="relative pt-[51.53%]">
+          <iframe
+            src="https://player.vimeo.com/video/830594002?h=a56b2da76b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameBorder="0"
+            width={"100%"}
+            height={"auto"}
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            title="Classic Park Prototype"
+            className="absolute top-0 right-0 w-full h-full"
+          ></iframe>
+        </div>
+      </div>
       <Pagination
         prev={`${pages.project}${pages.libraria}`}
         next={`${pages.project}${pages.flet_ride}`}
